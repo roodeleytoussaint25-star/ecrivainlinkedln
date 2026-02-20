@@ -1,48 +1,60 @@
 
 
-# Refonte de la section Preuve -- style dashboard pratique et chronometre
+# Rafraichissement des couleurs pour un look premium et minimaliste
 
-## Inspiration
-Les images de reference montrent des dashboards sombres avec des cartes arrondies, des barres verticales de progression type "capsule", un calendrier de suivi jour par jour (style dots/cercles), et des cartes jour par jour avec statuts. L'objectif est de montrer l'aspect **pratique, structure et chronometre** de l'offre 20 jours.
+## Probleme actuel
+Presque toutes les sections utilisent des fonds tres sombres (`navy-deep` a 20% de luminosite, `navy` a 33%). Le resultat est un effet "tunnel sombre" qui manque de contraste et de respiration entre les sections.
+
+## Strategie
+Eclaircir la palette globale, alterner entre sections sombres et claires, et ajouter de la subtilite dans les degrades pour un rendu premium aere.
 
 ## Changements prevus
 
-### 1. Nouveau layout
-- Garder le texte a gauche (titre + description)
-- Remplacer la grille de 4 stats a droite par **deux widgets visuels empiles** inspires des images
+### 1. Palette de couleurs (src/index.css)
+- `--navy` : passer de 33% a 38% de luminosite (plus clair, plus bleu elegant)
+- `--navy-deep` : passer de 20% a 15% (garder sombre mais plus profond et riche pour le hero uniquement)
+- Ajouter `--navy-mid` a 28% pour les sections intermediaires
+- `--gold` : legere augmentation de luminosite (55%) pour plus d'eclat
+- `--grey-light` : rester a 95-97% pour les sections claires
 
-### 2. Widget 1 : Barre de progression 20 jours (style capsule)
-- Inspire de l'image "Your progress" avec les barres verticales arrondies
-- 5 barres representant les **4 semaines + jour final** du programme (Sem 1, Sem 2, Sem 3, Sem 4, Final)
-- Chaque barre a une hauteur proportionnelle au nombre de posts/actions prevues
-- Fond sombre avec bordure subtile (`bg-white/5 border border-white/10`)
-- Header : "Votre progression" avec sous-titre "20 jours d'actions concretes"
-- Barre active (ex: Sem 3) mise en valeur avec une etiquette gold
-- Legende en bas : "Posts publies" + "Moyenne : 1 post/jour"
+### 2. Alternance des fonds de section (chaque fichier section)
+Creer un rythme clair/sombre plus equilibre :
+- **Hero** : reste navy-deep (la seule section vraiment sombre) avec aurora
+- **Invitation** : passer a un fond navy plus clair (38%) avec un leger degrade vers le haut
+- **Proof** : fond navy-mid (28%) au lieu de navy-deep -- plus lisible
+- **Vehicle** : fond navy clair (38%)
+- **Timeline** : reste clair (grey-light) -- ok
+- **Disqualification** : navy-mid (28%) au lieu de navy-deep
+- **Logistics** : reste clair (grey-light) -- ok
+- **Investment** : navy-deep mais avec un degrade subtil vers navy-mid
+- **CTA** : navy avec degrade
+- **Footer** : navy-deep
 
-### 3. Widget 2 : Calendrier de suivi (style dots)
-- Inspire de l'image "Irrigation Calendar" avec les cercles gold/gris
-- Grille 5 colonnes x 4 lignes = 20 jours
-- Cercles gold = jours actifs, cercles gris = jours a venir
-- Header : "Calendrier d'action" avec sous-titre "20 posts en 20 jours"
-- Legende : cercle gold = "Fait" / cercle gris = "A venir"
+### 3. Ameliorations visuelles par section
+- Augmenter l'opacite du texte secondaire de `white/50-60` a `white/65-75` pour plus de lisibilite
+- Bordures de cartes : passer de `white/10` a `white/12-15` pour plus de definition
+- Fonds de cartes : passer de `white/5` a `white/8` pour plus de contraste
+- Ajouter des degrades subtils entre les sections pour eviter les coupures brutes
 
-### 4. Stats en bas
-- Ligne horizontale avec 3 mini-stats : "20 jours" | "20+ posts" | "5 beta-testeurs"
-- Style pilule sombre avec texte gold pour les valeurs
+### 4. Tailwind config (tailwind.config.ts)
+- Ajouter la couleur `navy-mid` dans la config
 
-### 5. Style global
-- Cartes sombres arrondies (`rounded-2xl`) avec `bg-white/5 backdrop-blur border border-white/10`
-- Couleurs : gold pour les elements actifs, blanc/gris pour le texte, fond navy-deep
-- Hover subtil sur les cartes
-
-## Fichier modifie
-- `src/components/landing/ProofSection.tsx` -- refonte complete
+## Fichiers modifies
+- `src/index.css` -- nouvelles variables CSS
+- `tailwind.config.ts` -- ajout navy-mid
+- `src/components/landing/InvitationSection.tsx` -- fond eclairci
+- `src/components/landing/ProofSection.tsx` -- fond eclairci + opacites
+- `src/components/landing/VehicleSection.tsx` -- fond eclairci
+- `src/components/landing/DisqualificationSection.tsx` -- fond eclairci
+- `src/components/landing/InvestmentSection.tsx` -- degrade
+- `src/components/landing/CTASection.tsx` -- degrade
+- `src/components/landing/HeroSection.tsx` -- ajustements mineurs d'opacite texte
 
 ## Details techniques
-- Suppression des imports Lucide (Target, TrendingUp, Users, Search)
-- Les barres de progression seront des `div` avec hauteurs variables et `rounded-full`
-- Le calendrier sera une grille CSS `grid-cols-5` avec des cercles de 28px
-- Les animations `observe-section` seront conservees
-- Responsive : sur mobile, les widgets passent en colonne sous le texte
+- Ajout de `--navy-mid: 224 60% 28%` dans les variables CSS root
+- Ajout de `navy-mid` dans `tailwind.config.ts` sous `colors.navy`
+- Remplacement des classes `bg-navy-deep` et `bg-navy` selon la nouvelle alternance
+- Augmentation systematique des opacites texte (`white/50` vers `white/65`, `white/60` vers `white/75`)
+- Augmentation des opacites de bordure (`white/10` vers `white/15`)
+- Augmentation des fonds de carte (`white/5` vers `white/8`)
 
