@@ -64,25 +64,46 @@ const InvitationSection = () => {
           {cards.map((card, i) => (
             <div
               key={i}
-              className={`observe-section bg-gold rounded-3xl p-7 sm:p-8 transition-all hover:-translate-y-1 hover:shadow-2xl shadow-lg ${
+              className={`observe-section group relative rounded-3xl p-[1px] transition-all hover:-translate-y-2 hover:shadow-2xl ${
                 i === 2
                   ? "md:col-span-2 md:max-w-[calc(50%-12px)] md:mx-auto"
                   : ""
               }`}
+              style={{
+                background:
+                  "linear-gradient(160deg, hsla(270, 60%, 50%, 0.4), hsla(224, 76%, 33%, 0.3), hsla(270, 80%, 30%, 0.5))",
+              }}
             >
-              <div className="w-14 h-14 rounded-xl bg-navy-deep/10 flex items-center justify-center mb-5 text-navy-deep">
-                <card.icon />
+              {/* Glow effect on hover */}
+              <div className="absolute -inset-1 rounded-3xl bg-[radial-gradient(circle_at_50%_100%,hsla(270,60%,50%,0.3),transparent_70%)] opacity-0 group-hover:opacity-100 transition-opacity blur-xl" />
+
+              {/* Card inner */}
+              <div
+                className="relative rounded-3xl p-7 sm:p-8 backdrop-blur-xl overflow-hidden"
+                style={{
+                  background:
+                    "linear-gradient(170deg, hsla(224, 76%, 20%, 0.95) 0%, hsla(260, 40%, 15%, 0.95) 60%, hsla(270, 50%, 20%, 0.9) 100%)",
+                }}
+              >
+                {/* Subtle gradient glow at bottom */}
+                <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-[hsla(270,60%,40%,0.15)] to-transparent pointer-events-none" />
+
+                <div className="relative z-10">
+                  <div className="w-12 h-12 rounded-xl bg-white/10 backdrop-blur-sm border border-white/10 flex items-center justify-center mb-5 text-gold">
+                    <card.icon />
+                  </div>
+                  <h3 className="font-display text-lg font-semibold text-white mb-2">
+                    {card.title}{" "}
+                    <span className="relative text-gold">
+                      {card.highlight}
+                      <span className="absolute left-0 right-0 -bottom-1 h-[2px] bg-gold/50 rounded-full" />
+                    </span>
+                  </h3>
+                  <p className="text-white/60 text-sm leading-relaxed">
+                    {card.text}
+                  </p>
+                </div>
               </div>
-              <h3 className="font-display text-lg font-semibold text-navy-deep mb-2">
-                {card.title}{" "}
-                <span className="relative text-navy-deep">
-                  {card.highlight}
-                  <span className="absolute left-0 right-0 -bottom-1 h-[2px] bg-navy-deep/60 rounded-full" />
-                </span>
-              </h3>
-              <p className="text-navy-deep/70 text-sm leading-relaxed">
-                {card.text}
-              </p>
             </div>
           ))}
         </div>
