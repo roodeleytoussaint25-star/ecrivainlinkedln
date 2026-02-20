@@ -7,11 +7,11 @@ import hero4 from "@/assets/hero/hero-4.png";
 import hero5 from "@/assets/hero/hero-5.png";
 
 const heroImages = [
-  { src: hero1, rotation: "-rotate-6", alt: "Post LinkedIn", author: "Sophie Bidaux", engagement: "1 708" },
-  { src: hero2, rotation: "rotate-3", alt: "Post LinkedIn", author: "Sophie Bidaux", engagement: "251" },
-  { src: hero3, rotation: "-rotate-3", alt: "Post LinkedIn", author: "Sophie Bidaux", engagement: "231" },
-  { src: hero4, rotation: "rotate-6", alt: "Post LinkedIn", author: "Hugo Marquet", engagement: "142" },
-  { src: hero5, rotation: "-rotate-2", alt: "Post LinkedIn", author: "Hugo Marquet", engagement: "324" },
+  { src: hero1, rotation: "-rotate-6", alt: "Post LinkedIn" },
+  { src: hero2, rotation: "rotate-3", alt: "Post LinkedIn" },
+  { src: hero3, rotation: "-rotate-3", alt: "Post LinkedIn" },
+  { src: hero4, rotation: "rotate-6", alt: "Post LinkedIn" },
+  { src: hero5, rotation: "-rotate-2", alt: "Post LinkedIn" },
 ];
 
 const HeroSection = () => {
@@ -76,7 +76,7 @@ const HeroSection = () => {
           {heroImages.map((img, i) => (
             <div
               key={i}
-              className={`relative flex-shrink-0 w-36 h-48 sm:w-48 sm:h-64 md:w-56 md:h-72 rounded-2xl overflow-hidden transform ${img.rotation} transition-transform duration-500 hover:rotate-0 hover:scale-105 shadow-2xl`}
+              className={`relative flex-shrink-0 w-40 h-56 sm:w-52 sm:h-72 md:w-60 md:h-80 rounded-2xl overflow-hidden transform ${img.rotation} transition-transform duration-500 hover:rotate-0 hover:scale-110 shadow-2xl`}
               style={{ transformOrigin: "bottom center" }}
             >
               <img
@@ -85,14 +85,7 @@ const HeroSection = () => {
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
-              <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-3 pointer-events-none">
-                <p className="text-white text-[10px] sm:text-xs font-medium truncate">{img.author}</p>
-                <div className="flex items-center gap-1 mt-0.5">
-                  <span className="text-gold text-xs sm:text-sm font-bold">{img.engagement}</span>
-                  <span className="text-white/60 text-[9px] sm:text-[10px]">réactions</span>
-                </div>
-              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
             </div>
           ))}
         </div>
