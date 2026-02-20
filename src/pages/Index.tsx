@@ -1,12 +1,47 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useEffect, useRef } from "react";
+import HeroSection from "@/components/landing/HeroSection";
+import InvitationSection from "@/components/landing/InvitationSection";
+import ProofSection from "@/components/landing/ProofSection";
+import VehicleSection from "@/components/landing/VehicleSection";
+import TimelineSection from "@/components/landing/TimelineSection";
+import DisqualificationSection from "@/components/landing/DisqualificationSection";
+import LogisticsSection from "@/components/landing/LogisticsSection";
+import InvestmentSection from "@/components/landing/InvestmentSection";
+import CTASection from "@/components/landing/CTASection";
 
 const Index = () => {
+  const sectionsRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-fade-in");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    const sections = sectionsRef.current?.querySelectorAll(".observe-section");
+    sections?.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div ref={sectionsRef} className="overflow-x-hidden">
+      <HeroSection />
+      <InvitationSection />
+      <ProofSection />
+      <VehicleSection />
+      <TimelineSection />
+      <DisqualificationSection />
+      <LogisticsSection />
+      <InvestmentSection />
+      <CTASection />
     </div>
   );
 };
