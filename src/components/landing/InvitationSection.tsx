@@ -99,7 +99,7 @@ const InvitationSection = () => {
                       <span className="absolute left-0 right-0 -bottom-1 h-[2px] bg-gold/50 rounded-full" />
                     </span>
                   </h3>
-                  <p className="text-white/60 text-sm leading-relaxed">
+                  <p className="text-white/70 text-sm leading-relaxed">
                     {card.text}
                   </p>
                 </div>

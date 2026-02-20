@@ -75,14 +75,14 @@ const VehicleSection = () => {
             <AccordionItem
               key={phase.num}
               value={phase.num}
-              className="observe-section border border-white/10 rounded-2xl overflow-hidden bg-white/5 backdrop-blur-sm px-6 hover:border-gold/20 transition-colors"
+              className="observe-section border border-white/15 rounded-2xl overflow-hidden bg-white/8 backdrop-blur-sm px-6 hover:border-gold/20 transition-colors"
             >
               <AccordionTrigger className="hover:no-underline py-6">
                 <div className="flex items-center gap-4 text-left">
                   <span className="font-display text-3xl font-bold text-gold/40">{phase.num}</span>
                   <div>
                     <h3 className="font-display text-lg font-semibold text-white">{phase.title}</h3>
-                    <p className="text-white/50 text-sm">{phase.subtitle}</p>
+                    <p className="text-white/60 text-sm">{phase.subtitle}</p>
                   </div>
                 </div>
               </AccordionTrigger>

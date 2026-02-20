@@ -15,7 +15,7 @@ const included = [
 
 const InvestmentSection = () => {
   return (
-    <section id="investissement" className="bg-navy-deep py-20 sm:py-28">
+    <section id="investissement" className="bg-gradient-to-b from-navy-deep to-navy-mid py-20 sm:py-28">
       <div className="container mx-auto px-4 sm:px-6 max-w-4xl">
         <div className="text-center mb-12 observe-section">
           <span className="text-gold font-display text-sm font-semibold tracking-wider uppercase mb-4 block">
@@ -24,16 +24,16 @@ const InvestmentSection = () => {
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-2">
             Tout ce dont vous avez besoin
           </h2>
-          <p className="text-white/50">pour transformer votre présence LinkedIn en 20 jours</p>
+          <p className="text-white/65">pour transformer votre présence LinkedIn en 20 jours</p>
         </div>
 
-        <div className="observe-section bg-white/5 backdrop-blur-sm border border-gold/20 rounded-3xl p-8 sm:p-12 max-w-2xl mx-auto">
+        <div className="observe-section bg-white/8 backdrop-blur-sm border border-gold/20 rounded-3xl p-8 sm:p-12 max-w-2xl mx-auto">
           <div className="text-center mb-8">
             <div className="flex items-baseline justify-center gap-1">
               <span className="font-display text-6xl sm:text-7xl font-bold text-gold">100</span>
               <span className="font-display text-2xl font-bold text-gold">€</span>
             </div>
-            <p className="text-white/40 text-sm mt-2">Paiement unique · Accès complet 20 jours</p>
+            <p className="text-white/50 text-sm mt-2">Paiement unique · Accès complet 20 jours</p>
           </div>
 
           <div className="space-y-3 mb-10">

@@ -10,7 +10,7 @@ const activeDays = 14; // jours "faits" sur 20
 
 const ProofSection = () => {
   return (
-    <section className="bg-navy-deep py-20 sm:py-28">
+    <section className="bg-navy-mid py-20 sm:py-28">
       <div className="container mx-auto px-4 sm:px-6 max-w-5xl">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Texte gauche */}
@@ -43,10 +43,10 @@ const ProofSection = () => {
               ].map((s, i) => (
                 <div
                   key={i}
-                  className="bg-white/5 border border-white/10 rounded-full px-5 py-2.5 flex items-center gap-2"
+                  className="bg-white/8 border border-white/15 rounded-full px-5 py-2.5 flex items-center gap-2"
                 >
                   <span className="text-gold font-display font-bold text-lg">{s.value}</span>
-                  <span className="text-white/50 text-sm">{s.label}</span>
+                  <span className="text-white/60 text-sm">{s.label}</span>
                 </div>
               ))}
             </div>
@@ -55,10 +55,10 @@ const ProofSection = () => {
           {/* Widgets droite */}
           <div className="observe-section space-y-5">
             {/* Widget 1 : Barres de progression */}
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:border-gold/20 transition-colors">
+            <div className="bg-white/8 backdrop-blur-sm border border-white/15 rounded-2xl p-6 hover:border-gold/20 transition-colors">
               <div className="mb-5">
                 <h3 className="text-white font-display font-semibold text-base">Votre progression</h3>
-                <p className="text-white/40 text-xs mt-0.5">20 jours d'actions concrètes</p>
+                <p className="text-white/50 text-xs mt-0.5">20 jours d'actions concrètes</p>
               </div>
               <div className="flex items-end justify-between gap-3 h-36">
                 {progressBars.map((bar, i) => (
@@ -89,10 +89,10 @@ const ProofSection = () => {
             </div>
 
             {/* Widget 2 : Calendrier dots */}
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:border-gold/20 transition-colors">
+            <div className="bg-white/8 backdrop-blur-sm border border-white/15 rounded-2xl p-6 hover:border-gold/20 transition-colors">
               <div className="mb-5">
                 <h3 className="text-white font-display font-semibold text-base">Calendrier d'action</h3>
-                <p className="text-white/40 text-xs mt-0.5">20 posts en 20 jours</p>
+                <p className="text-white/50 text-xs mt-0.5">20 posts en 20 jours</p>
               </div>
               <div className="grid grid-cols-5 gap-3 justify-items-center">
                 {Array.from({ length: 20 }, (_, i) => {

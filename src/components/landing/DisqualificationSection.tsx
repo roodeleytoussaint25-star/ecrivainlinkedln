@@ -11,7 +11,7 @@ const disqualifiers = [
 
 const DisqualificationSection = () => {
   return (
-    <section className="bg-navy-deep py-20 sm:py-28">
+    <section className="bg-navy-mid py-20 sm:py-28">
       <div className="container mx-auto px-4 sm:px-6 max-w-3xl">
         <div className="text-center mb-12 observe-section">
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-white">
@@ -24,7 +24,7 @@ const DisqualificationSection = () => {
           {disqualifiers.map((item, i) => (
             <div
               key={i}
-              className="observe-section flex items-start gap-4 bg-white/5 border border-white/10 rounded-xl p-4 sm:p-5 hover:border-red-500/30 transition-colors"
+              className="observe-section flex items-start gap-4 bg-white/8 border border-white/15 rounded-xl p-4 sm:p-5 hover:border-red-500/30 transition-colors"
             >
               <div className="w-8 h-8 shrink-0 rounded-lg bg-red-500/10 flex items-center justify-center">
                 <X className="w-4 h-4 text-red-400" />

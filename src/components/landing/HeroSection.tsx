@@ -141,7 +141,7 @@ const HeroSection = () => {
           qui génère des leads
         </h1>
 
-        <p className="text-lg sm:text-xl text-white/60 mb-10 max-w-2xl mx-auto animate-fade-in-delay-2">
+        <p className="text-lg sm:text-xl text-white/70 mb-10 max-w-2xl mx-auto animate-fade-in-delay-2">
           20 jours · 20 posts · Profil optimisé · Offre + Landing page inclus.
           Feedback et correction sur chaque post.
         </p>
@@ -208,7 +208,7 @@ const HeroSection = () => {
       </div>
 
       {/* Author */}
-      <p className="relative z-10 mt-12 text-white/40 text-sm font-display tracking-wider uppercase animate-fade-in-delay-3">
+      <p className="relative z-10 mt-12 text-white/50 text-sm font-display tracking-wider uppercase animate-fade-in-delay-3">
         par Toussaint Roodeley
       </p>
     </section>
