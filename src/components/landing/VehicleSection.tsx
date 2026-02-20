@@ -61,13 +61,13 @@ const VehicleSection = () => {
   return (
     <section className="bg-navy py-20 sm:py-28">
       <div className="container mx-auto px-4 sm:px-6 max-w-4xl">
-        <div className="text-center mb-14 observe-section">
-          <span className="text-gold font-display text-sm font-semibold tracking-wider uppercase mb-4 block">
-            Le Véhicule
-          </span>
+        <div className="text-center mb-14 observe-section max-w-2xl mx-auto">
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-white">
-            Le Game en <span className="text-gold">3 Phases</span>
+            L'écriture est au <span className="text-gold">centre de tout</span>
           </h2>
+          <p className="text-white/70 mt-4 text-base sm:text-lg leading-relaxed">
+            Pour réussir ici, il faut considérer l'écriture comme le centre de tout. J'identifie 3 types de travail pour y arriver, avec l'écriture comme point central.
+          </p>
         </div>
 
         <Accordion type="single" collapsible className="space-y-4">
@@ -88,17 +88,30 @@ const VehicleSection = () => {
               </AccordionTrigger>
               <AccordionContent>
                 <ul className="grid sm:grid-cols-2 gap-2 pb-4">
-                  {phase.items.map((item, i) => (
-                    <li key={i} className="flex items-start gap-2 text-white/70 text-sm">
-                      <span className="text-gold mt-0.5 shrink-0">✦</span>
-                      {item}
-                    </li>
-                  ))}
+                  {phase.items.map((item, i) => {
+                    const parts = item.split(" — ");
+                    return (
+                      <li key={i} className="flex items-start gap-2 text-sm">
+                        <span className="text-gold mt-0.5 shrink-0">✦</span>
+                        <span>
+                          <span className="text-white font-medium">{parts[0]}</span>
+                          {parts[1] && <span className="text-white/55"> — {parts[1]}</span>}
+                        </span>
+                      </li>
+                    );
+                  })}
                 </ul>
               </AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
+
+        <div className="text-center mt-10 observe-section">
+          <span className="inline-flex items-center gap-2 text-gold/80 font-display text-sm font-semibold tracking-wide">
+            <span className="text-gold text-lg">✦</span>
+            28 méthodes et frameworks inclus
+          </span>
+        </div>
       </div>
     </section>
   );
