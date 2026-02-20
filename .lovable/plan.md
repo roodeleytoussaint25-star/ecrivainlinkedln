@@ -1,28 +1,27 @@
 
 
-# Redesign du Hero Section
+# Remplacement des placeholders du Hero par les 5 images LinkedIn
 
-## Inspiration
-Le style de l'image de reference : fond noir/sombre, grand titre centre en serif/display bold, sous-titre descriptif, deux boutons CTA cote a cote, et une galerie horizontale d'images inclinees/superposees en dessous du texte.
+## Ce qui va etre fait
+Copier les 5 images uploadees dans `src/assets/hero/` et les utiliser dans la galerie inclinee du Hero Section a la place des placeholders actuels (icones).
 
-## Changements prevus
+## Images et leur placement dans la galerie
+1. `hero-1.png` - Post Sophie Bidaux "Le controle, c'est pour les enfants" (1 708 reactions)
+2. `hero-2.png` - Post Sophie Bidaux "Vous n'avez pas un probleme de talents" (251 reactions)
+3. `hero-3.png` - Post Sophie Bidaux carrousel "8 peurs qui vous empechent de deleguer" (231 reactions)
+4. `hero-4.png` - Post Hugo Marquet scierie (142 reactions)
+5. `hero-5.png` - Post Hugo Marquet atelier bois (324 reactions)
 
-### Structure du nouveau Hero
-1. **Fond** : Fond navy-deep (noir profond), pas de decorations blob -- style epure
-2. **Titre** : Grande typographie display centree, avec le mot cle en couleur gold, style similaire a "Showcase your work to the world."
-3. **Sous-titre** : Texte descriptif en blanc/gris sous le titre
-4. **Deux boutons CTA** : cote a cote -- un bouton gold plein ("Reservez votre place") et un bouton outline blanc ("Voir le programme")
-5. **Galerie d'images** : Rangee horizontale d'images inclinees/rotees avec des effets de perspective, debordant sur les cotes de l'ecran -- les images que l'utilisateur fournira seront placees ici
-6. **Badges flottants** : Petits badges colores ("Coaching 1:1", "IA Prompts") places autour de la galerie d'images, similaires aux badges "designer" et "artist" dans la reference
+## Modifications techniques
 
-### Details techniques
-- Modifier `src/components/landing/HeroSection.tsx`
-- Utiliser des placeholders pour les images en attendant que l'utilisateur fournisse les siennes (images grises avec icones)
-- Les images seront copiees dans `src/assets/` et importees en ES6 modules
-- Rotations CSS avec `rotate-[-6deg]`, `rotate-[3deg]`, etc. pour l'effet de galerie inclinee
-- Responsive : sur mobile, les images seront plus petites et en scroll horizontal
-- Animations fade-in conservees avec delais progressifs
+### Fichiers crees
+- `src/assets/hero/hero-1.png` a `hero-5.png` : copie des 5 images
 
-### Fichiers modifies
-- `src/components/landing/HeroSection.tsx` -- refonte complete du composant
+### Fichier modifie : `src/components/landing/HeroSection.tsx`
+- Supprimer le tableau `placeholderImages` avec les icones
+- Importer les 5 images depuis `@/assets/hero/`
+- Remplacer les divs placeholder par des balises `<img>` avec `object-cover` et `rounded-2xl`
+- Conserver les rotations CSS, les effets de perspective, et le hover
+- Ajouter un overlay subtil sur chaque image pour l'integration visuelle
+- Les labels sous les images seront retires (les images parlent d'elles-memes)
 
