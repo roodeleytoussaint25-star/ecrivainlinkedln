@@ -15,23 +15,28 @@ const ProofSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Texte gauche */}
           <div className="observe-section">
-            <span className="text-gold font-display text-sm font-semibold tracking-wider uppercase mb-4 block">
-              La Preuve
-            </span>
             <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-6 leading-tight">
-              Mes 5 premiers clients sont venus de mes{" "}
-              <span className="text-gold">actions quotidiennes</span>
+              On complique toujours la{" "}
+              <span className="text-gold">création de contenu</span>
             </h2>
             <div className="space-y-4 text-white/70 leading-relaxed">
               <p>
-                Je n'ai pas attendu qu'ils viennent à moi. J'ai utilisé ce système — écriture quotidienne,
-                cohérence, et engagement authentique — pour atteindre mes 5 premiers coachés sur LinkedIn.
+                Le rôle du contenu est simple : partager nos valeurs pour qu'on ait envie de travailler avec nous.
               </p>
               <p>
-                Cette année, je transforme cette formule en offre structurée. C'est pour cela que{" "}
-                <strong className="text-gold font-semibold">je recherche 5 bêta-testeurs motivés</strong>{" "}
-                afin de co-construire cette offre ensemble et gagner en crédibilité mutuelle.
+                Le problème avec la majorité des contenus de nos jours, c'est qu'ils souhaitent plaire au maximum
+                de monde possible. Aujourd'hui, c'est pire, car les gens n'ont plus d'idées de contenu : les LLM
+                les génèrent à leur place.
               </p>
+              <p>
+                Aujourd'hui, les gens parlent avant de faire. Beaucoup tentent de devenir des grands créateurs
+                sans avoir eu leur premier client.
+              </p>
+              <blockquote className="border-l-2 border-gold pl-4 mt-2">
+                <p className="text-gold font-display font-semibold text-lg italic">
+                  "L'objectif des premières années est d'apprendre, pas de gagner."
+                </p>
+              </blockquote>
             </div>
 
             {/* Mini stats */}
