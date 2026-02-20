@@ -17,6 +17,55 @@ const heroImages = [
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center bg-navy-deep overflow-hidden pt-20 pb-10">
+      {/* Animated Aurora Background */}
+      <div className="absolute inset-0 overflow-hidden">
+        {/* Main purple glow */}
+        <div
+          className="absolute w-[800px] h-[800px] rounded-full opacity-30"
+          style={{
+            background: "radial-gradient(circle, hsla(270, 80%, 45%, 0.6) 0%, hsla(260, 70%, 30%, 0.3) 40%, transparent 70%)",
+            top: "-10%",
+            left: "20%",
+            animation: "auroraFloat1 8s ease-in-out infinite",
+          }}
+        />
+        {/* Secondary glow */}
+        <div
+          className="absolute w-[600px] h-[600px] rounded-full opacity-20"
+          style={{
+            background: "radial-gradient(circle, hsla(280, 90%, 50%, 0.5) 0%, hsla(250, 60%, 35%, 0.2) 50%, transparent 70%)",
+            top: "10%",
+            right: "10%",
+            animation: "auroraFloat2 10s ease-in-out infinite",
+          }}
+        />
+        {/* Deep blue accent */}
+        <div
+          className="absolute w-[500px] h-[500px] rounded-full opacity-15"
+          style={{
+            background: "radial-gradient(circle, hsla(240, 70%, 40%, 0.5) 0%, transparent 60%)",
+            bottom: "20%",
+            left: "40%",
+            animation: "auroraFloat3 12s ease-in-out infinite",
+          }}
+        />
+        {/* Light streaks */}
+        {[...Array(6)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute h-[1px] opacity-20"
+            style={{
+              width: `${80 + i * 40}px`,
+              background: "linear-gradient(90deg, transparent, hsla(270, 80%, 60%, 0.8), transparent)",
+              bottom: `${15 + i * 8}%`,
+              right: `${5 + i * 12}%`,
+              transform: "rotate(-35deg)",
+              animation: `streakGlow ${3 + i * 0.5}s ease-in-out ${i * 0.4}s infinite`,
+            }}
+          />
+        ))}
+      </div>
+
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 text-center max-w-4xl">
         <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2 mb-8 animate-fade-in">
@@ -62,7 +111,6 @@ const HeroSection = () => {
 
       {/* Tilted Image Gallery */}
       <div className="relative z-10 w-full mt-16 animate-fade-in-delay-3">
-        {/* Floating badges */}
         <div className="absolute -top-4 left-[10%] sm:left-[15%] z-20 bg-gold text-navy-deep text-xs font-bold px-3 py-1.5 rounded-full shadow-lg animate-fade-in-delay-2">
           Coaching 1:1
         </div>
@@ -71,7 +119,6 @@ const HeroSection = () => {
           IA Prompts
         </div>
 
-        {/* Gallery row */}
         <div className="flex justify-center items-end gap-4 sm:gap-6 px-4 overflow-hidden" style={{ perspective: "1000px" }}>
           {heroImages.map((img, i) => (
             <div
