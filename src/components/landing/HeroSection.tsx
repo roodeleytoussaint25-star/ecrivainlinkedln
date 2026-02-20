@@ -7,11 +7,11 @@ import hero4 from "@/assets/hero/hero-4.png";
 import hero5 from "@/assets/hero/hero-5.png";
 
 const heroImages = [
-  { src: hero1, rotation: "-rotate-6", alt: "Post LinkedIn - 1708 réactions" },
-  { src: hero2, rotation: "rotate-3", alt: "Post LinkedIn - 251 réactions" },
-  { src: hero3, rotation: "-rotate-3", alt: "Post LinkedIn carrousel" },
-  { src: hero4, rotation: "rotate-6", alt: "Post LinkedIn scierie" },
-  { src: hero5, rotation: "-rotate-2", alt: "Post LinkedIn atelier bois" },
+  { src: hero1, rotation: "-rotate-6", alt: "Post LinkedIn", author: "Sophie Bidaux", engagement: "1 708" },
+  { src: hero2, rotation: "rotate-3", alt: "Post LinkedIn", author: "Sophie Bidaux", engagement: "251" },
+  { src: hero3, rotation: "-rotate-3", alt: "Post LinkedIn", author: "Sophie Bidaux", engagement: "231" },
+  { src: hero4, rotation: "rotate-6", alt: "Post LinkedIn", author: "Hugo Marquet", engagement: "142" },
+  { src: hero5, rotation: "-rotate-2", alt: "Post LinkedIn", author: "Hugo Marquet", engagement: "324" },
 ];
 
 const HeroSection = () => {
@@ -85,7 +85,14 @@ const HeroSection = () => {
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
+              <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-3 pointer-events-none">
+                <p className="text-white text-[10px] sm:text-xs font-medium truncate">{img.author}</p>
+                <div className="flex items-center gap-1 mt-0.5">
+                  <span className="text-gold text-xs sm:text-sm font-bold">{img.engagement}</span>
+                  <span className="text-white/60 text-[9px] sm:text-[10px]">réactions</span>
+                </div>
+              </div>
             </div>
           ))}
         </div>
