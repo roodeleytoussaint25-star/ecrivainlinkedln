@@ -1,12 +1,17 @@
-import { ArrowRight, Eye, Linkedin, Sparkles, Bot, PenTool, Target, BarChart3 } from "lucide-react";
+import { ArrowRight, Eye, Linkedin, Bot } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import hero1 from "@/assets/hero/hero-1.png";
+import hero2 from "@/assets/hero/hero-2.png";
+import hero3 from "@/assets/hero/hero-3.png";
+import hero4 from "@/assets/hero/hero-4.png";
+import hero5 from "@/assets/hero/hero-5.png";
 
-const placeholderImages = [
-  { icon: PenTool, rotation: "-rotate-6", label: "Écriture" },
-  { icon: Target, rotation: "rotate-3", label: "Stratégie" },
-  { icon: Linkedin, rotation: "-rotate-3", label: "LinkedIn" },
-  { icon: BarChart3, rotation: "rotate-6", label: "Croissance" },
-  { icon: Sparkles, rotation: "-rotate-2", label: "IA Prompts" },
+const heroImages = [
+  { src: hero1, rotation: "-rotate-6", alt: "Post LinkedIn - 1708 réactions" },
+  { src: hero2, rotation: "rotate-3", alt: "Post LinkedIn - 251 réactions" },
+  { src: hero3, rotation: "-rotate-3", alt: "Post LinkedIn carrousel" },
+  { src: hero4, rotation: "rotate-6", alt: "Post LinkedIn scierie" },
+  { src: hero5, rotation: "-rotate-2", alt: "Post LinkedIn atelier bois" },
 ];
 
 const HeroSection = () => {
@@ -68,15 +73,19 @@ const HeroSection = () => {
 
         {/* Gallery row */}
         <div className="flex justify-center items-end gap-4 sm:gap-6 px-4 overflow-hidden" style={{ perspective: "1000px" }}>
-          {placeholderImages.map((img, i) => (
+          {heroImages.map((img, i) => (
             <div
               key={i}
-              className={`relative flex-shrink-0 w-36 h-48 sm:w-48 sm:h-64 md:w-56 md:h-72 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm flex flex-col items-center justify-center gap-3 transform ${img.rotation} transition-transform duration-500 hover:rotate-0 hover:scale-105 shadow-2xl`}
+              className={`relative flex-shrink-0 w-36 h-48 sm:w-48 sm:h-64 md:w-56 md:h-72 rounded-2xl overflow-hidden transform ${img.rotation} transition-transform duration-500 hover:rotate-0 hover:scale-105 shadow-2xl`}
               style={{ transformOrigin: "bottom center" }}
             >
-              <img.icon className="w-10 h-10 sm:w-12 sm:h-12 text-white/30" />
-              <span className="text-white/40 text-xs sm:text-sm font-medium">{img.label}</span>
-              <span className="text-white/20 text-[10px]">Votre image ici</span>
+              <img
+                src={img.src}
+                alt={img.alt}
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent pointer-events-none" />
             </div>
           ))}
         </div>
