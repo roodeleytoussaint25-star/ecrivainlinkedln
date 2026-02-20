@@ -1,40 +1,43 @@
 
 
-# Refonte du texte de la section Preuve -- Vision du jeu
+# Refonte de la section Vehicule -- Engagement et tangibilite de l'offre
 
 ## Objectif
-Remplacer le contenu textuel de la section Preuve pour expliquer la vision du "jeu" : pourquoi la creation de contenu est sur-compliquee aujourd'hui, et pourquoi l'objectif des premieres annees est d'apprendre, pas de gagner. Supprimer le petit titre "La Preuve" au-dessus du H2.
+Restructurer la section pour que le prospect comprenne clairement ce dans quoi il s'engage : l'ecriture est au centre de tout, et l'offre se decompose en 3 types de travail avec des methodes concretes et tangibles pour chacun.
 
-## Changements prevus
+## Nouvelle structure de la section
 
-### Suppression
-- Retirer le `<span>` "La Preuve" (ligne 18-20)
+### 1. En-tete (texte introductif)
+- Supprimer le petit titre "Le Vehicule" au-dessus du H2
+- Nouveau H2 : "L'ecriture est au **centre de tout**" (avec "centre de tout" en gold)
+- Paragraphe d'introduction : "Pour reussir ici, il faut considerer l'ecriture comme le centre de tout. J'identifie 3 types de travail pour y arriver, avec l'ecriture comme point central."
 
-### Nouveau titre H2
-- "On complique toujours la creation de contenu" avec "creation de contenu" en gold
+### 2. Les 3 phases (accordion existant, ameliore)
+Garder le format accordion avec les 3 phases, mais rendre les items plus tangibles en separant visuellement le nom de la methode de sa description :
 
-### Nouveau contenu textuel (bloc gauche)
-Remplacer les 2 paragraphes actuels par le message de vision structure :
+- **Phase 01 -- Travail en Amont** (sous-titre : "Fondations et strategie") -- 9 items (inchanges)
+- **Phase 02 -- Travail Pratique** (sous-titre : "Creation et publication") -- 11 items (inchanges)
+- **Phase 03 -- Travail en Aval** (sous-titre : "Monetisation et croissance") -- 8 items (inchanges)
 
-1. **Paragraphe 1** : Le role du contenu est simple -- partager nos valeurs pour qu'on ait envie de travailler avec nous.
+Chaque item sera affiche avec le nom de la methode en blanc/bold et la description apres le tiret en white/60, pour mieux mettre en valeur la tangibilite (les assets concrets).
 
-2. **Paragraphe 2** : Le probleme aujourd'hui -- la majorite des contenus cherchent a plaire au maximum de monde. C'est pire avec les LLM qui generent les idees a la place des gens.
+### 3. Compteur de methodes
+Ajouter sous l'accordion un petit recap visuel : "28 methodes et frameworks inclus" pour renforcer la valeur percue.
 
-3. **Paragraphe 3** : Les gens parlent avant de faire. Beaucoup tentent de devenir des grands createurs sans avoir eu leur premier client.
-
-4. **Citation/accroche forte** : "L'objectif des premieres annees est d'apprendre, pas de gagner." -- en style citation avec bordure gold a gauche ou en texte gold mis en valeur.
-
-### Conservation
-- Les mini-stats (20 jours, 20+ posts, 5 beta-testeurs) restent en place
-- Les widgets droite (barres de progression + calendrier) restent intacts
-- Le layout grid 2 colonnes reste identique
+## Changements visuels par item
+Transformer chaque item de simple texte en deux parties stylees :
+- Avant le tiret " -- " : nom bold en `text-white font-medium`
+- Apres le tiret : description en `text-white/55 font-normal`
+- Cela donne une meilleure lisibilite et met en avant la tangibilite
 
 ## Fichier modifie
-- `src/components/landing/ProofSection.tsx` -- mise a jour du texte uniquement
+- `src/components/landing/VehicleSection.tsx` -- refonte du header + style des items
 
 ## Details techniques
-- Suppression de la ligne `<span className="text-gold...">La Preuve</span>`
-- Remplacement du H2 et des paragraphes dans le bloc `observe-section` gauche
-- Ajout d'un `<blockquote>` ou `<p>` style avec `border-l-2 border-gold pl-4` pour la citation finale
-- Aucun changement sur les widgets, les stats ou le layout
-
+- Suppression du `<span>` "Le Vehicule"
+- Nouveau H2 avec "centre de tout" en `text-gold`
+- Ajout d'un paragraphe `text-white/70` sous le H2
+- Pour chaque item, split sur " — " (tiret cadratin) pour separer nom et description
+- Nom : `text-white font-medium`, Description : `text-white/55`
+- Ajout d'un compteur total sous l'accordion : petit badge ou texte centre avec le nombre total de methodes
+- Aucun changement sur le layout accordion ni sur les donnees des phases
