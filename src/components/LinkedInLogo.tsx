@@ -21,9 +21,9 @@ const LinkedInLogo = ({ className = "h-5" }: LinkedInLogoProps) => (
     >
       Linked
     </text>
-    <rect x="52" y="2" width="22" height="18" rx="3" fill="#0A66C2" />
+    <rect x="49" y="2" width="22" height="18" rx="3" fill="#0A66C2" />
     <text
-      x="55"
+      x="52"
       y="17"
       style={{
         fontSize: "18px",
