@@ -57,7 +57,7 @@ const InvitationSection = () => {
       <div className="relative z-10 container mx-auto px-4 sm:px-6 max-w-5xl">
         <h2 className="font-display text-3xl sm:text-4xl font-bold text-white text-center mb-14 observe-section">
           Pourquoi vos posts ne génèrent{" "}
-          <span className="text-gold italic">ni engagement, ni clients</span>
+          <span className="text-gold">ni engagement, ni clients</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
