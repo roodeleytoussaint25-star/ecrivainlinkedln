@@ -4,36 +4,42 @@ interface LinkedInLogoProps {
 
 const LinkedInLogo = ({ className = "h-5" }: LinkedInLogoProps) => (
   <svg
-    viewBox="0 0 76 22"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 84 21"
     className={`inline-block align-middle ${className}`}
     aria-label="LinkedIn"
+    preserveAspectRatio="xMidYMid meet"
     style={{ verticalAlign: "baseline" }}
   >
-    <text
-      x="0"
-      y="17"
-      style={{
-        fontSize: "18px",
-        fill: "#0A66C2",
-        fontFamily: "system-ui, sans-serif",
-        fontWeight: 700,
-      }}
-    >
-      Linked
-    </text>
-    <rect x="49" y="2" width="22" height="18" rx="3" fill="#0A66C2" />
-    <text
-      x="52"
-      y="17"
-      style={{
-        fontSize: "18px",
-        fill: "white",
-        fontFamily: "system-ui, sans-serif",
-        fontWeight: 700,
-      }}
-    >
-      in
-    </text>
+    <path
+      d="M12.5 2.75A1.75 1.75 0 0114.25 1h54.5A1.75 1.75 0 0170.5 2.75v16.5A1.75 1.75 0 0168.75 21h-54.5A1.75 1.75 0 0112.5 19.25V2.75z"
+      fill="none"
+    />
+    {/* "Linked" wordmark */}
+    <g fill="#0A66C2">
+      {/* L */}
+      <path d="M0 16.85V4.8h2.55v12.05H0z" />
+      {/* i */}
+      <path d="M4.24 6.55a1.47 1.47 0 111.48-1.47 1.46 1.46 0 01-1.48 1.47zm-1.27 10.3V7.7h2.55v9.15H2.97z" />
+      {/* n */}
+      <path d="M8.17 7.7h2.45v1.25h.03a2.68 2.68 0 012.42-1.4c2.59 0 3.07 1.7 3.07 3.92v4.38h-2.55v-3.88c0-.93-.02-2.12-1.29-2.12-1.3 0-1.5 1.01-1.5 2.05v3.95H8.17V7.7z" />
+      {/* k */}
+      <path d="M17.73 4.8h2.55v6.9l2.87-3.99h3.08l-3.25 3.96 3.4 5.18h-2.97l-2.11-3.5-1.02 1.1v2.4h-2.55V4.8z" />
+      {/* e */}
+      <path d="M27.2 12.93c0 1.53.99 2.3 2.17 2.3a2.08 2.08 0 001.97-1.25h2.35a4.12 4.12 0 01-4.37 3.17c-2.76 0-4.62-1.7-4.62-4.7 0-2.83 1.92-4.78 4.62-4.78 3.11 0 4.62 2.45 4.4 5.26H27.2zm4.22-1.67c-.1-1.19-.89-2.02-2.08-2.02a2.14 2.14 0 00-2.14 2.02h4.22z" />
+      {/* d */}
+      <path d="M39.44 16.85h-2.45v-1.2h-.03a2.8 2.8 0 01-2.5 1.38c-2.47 0-3.88-1.96-3.88-4.66 0-2.48 1.27-4.72 3.72-4.72a2.75 2.75 0 012.59 1.34h.04V4.8h2.51v12.05zm-4.4-4.52c0 1.46.63 2.65 2.01 2.65 1.37 0 2-1.21 2-2.65 0-1.4-.68-2.6-2-2.6s-2.01 1.2-2.01 2.6z" />
+    </g>
+    {/* "in" icon box */}
+    <rect x="42" y="0.5" width="20" height="20" rx="2.5" fill="#0A66C2" />
+    <g fill="#fff">
+      {/* i dot */}
+      <circle cx="46.7" cy="5.7" r="1.35" />
+      {/* i body */}
+      <rect x="45.45" y="8.5" width="2.5" height="8" rx="0.3" />
+      {/* n */}
+      <path d="M49.85 8.5h2.4v1.1a2.9 2.9 0 012.5-1.28c2.1 0 2.75 1.4 2.75 3.2v4.98h-2.5v-4.28c0-.9-.25-1.6-1.15-1.6-.95 0-1.3.7-1.3 1.75v4.13h-2.5V8.5h-.2z" />
+    </g>
   </svg>
 );
 
