@@ -1,3 +1,5 @@
+import LinkedInLogo from "@/components/LinkedInLogo";
+
 const SketchX = () => (
   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M8 8L24 24" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -45,7 +47,7 @@ const cards = [
     icon: SketchBrain,
     title: "Vous n'arrivez pas à",
     highlight: "vendre",
-    text: "Vous savez que LinkedIn peut transformer votre activité. Mais entre publier et trouver des clients, il y a un gouffre. Vous accumulez les formations sans agir, vous copiez d'autres créateurs, toujours au stade zéro.",
+    text: <>Vous savez que <LinkedInLogo className="h-3.5" /> peut transformer votre activité. Mais entre publier et trouver des clients, il y a un gouffre. Vous accumulez les formations sans agir, vous copiez d'autres créateurs, toujours au stade zéro.</>,
   },
 ];
 
