@@ -7,6 +7,8 @@ import TimelineSection from "@/components/landing/TimelineSection";
 import DisqualificationSection from "@/components/landing/DisqualificationSection";
 import LogisticsSection from "@/components/landing/LogisticsSection";
 import InvestmentSection from "@/components/landing/InvestmentSection";
+import FAQSection from "@/components/landing/FAQSection";
+import AboutSection from "@/components/landing/AboutSection";
 import CTASection from "@/components/landing/CTASection";
 
 const Index = () => {
@@ -41,6 +43,8 @@ const Index = () => {
       <DisqualificationSection />
       <LogisticsSection />
       <InvestmentSection />
+      <FAQSection />
+      <AboutSection />
       <CTASection />
     </div>
   );
