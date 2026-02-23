@@ -1,5 +1,5 @@
-import { useEffect, useRef } from "react";
-import { ArrowRight, Eye, Linkedin, Bot } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { ArrowRight, Eye, Linkedin, Bot, ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import hero1 from "@/assets/hero/hero-1.png";
 import hero2 from "@/assets/hero/hero-2.png";
@@ -8,14 +8,74 @@ import hero4 from "@/assets/hero/hero-4.png";
 import hero5 from "@/assets/hero/hero-5.png";
 
 const heroImages = [
-  { src: hero1, rotation: "-rotate-6", alt: "Post LinkedIn", author: "Sophie Bidaux", engagement: "1 708" },
-  { src: hero2, rotation: "rotate-3", alt: "Post LinkedIn", author: "Sophie Bidaux", engagement: "251" },
-  { src: hero3, rotation: "-rotate-3", alt: "Post LinkedIn", author: "Sophie Bidaux", engagement: "231" },
-  { src: hero4, rotation: "rotate-6", alt: "Post LinkedIn", author: "Hugo Marquet", engagement: "142" },
-  { src: hero5, rotation: "-rotate-2", alt: "Post LinkedIn", author: "Hugo Marquet", engagement: "324" },
+  { src: hero1, alt: "Post LinkedIn", author: "Sophie Bidaux", engagement: "1 708" },
+  { src: hero2, alt: "Post LinkedIn", author: "Sophie Bidaux", engagement: "251" },
+  { src: hero3, alt: "Post LinkedIn", author: "Sophie Bidaux", engagement: "231" },
+  { src: hero4, alt: "Post LinkedIn", author: "Hugo Marquet", engagement: "142" },
+  { src: hero5, alt: "Post LinkedIn", author: "Hugo Marquet", engagement: "324" },
 ];
 
 const PARTICLE_COUNT = 40;
+
+const PhoneMockup = () => {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((c) => (c + 1) % heroImages.length);
+    }, 3000);
+    return () => clearInterval(timer);
+  }, []);
+
+  return (
+    <div className="relative mx-auto w-[260px] sm:w-[280px]">
+      {/* Phone frame */}
+      <div className="relative rounded-[2.5rem] border-[6px] border-white/20 bg-black/80 backdrop-blur-sm shadow-2xl shadow-black/40 overflow-hidden">
+        {/* Notch */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-6 bg-black rounded-b-2xl z-20" />
+        
+        {/* Screen */}
+        <div className="relative aspect-[9/17] overflow-hidden">
+          {heroImages.map((img, i) => (
+            <img
+              key={i}
+              src={img.src}
+              alt={img.alt}
+              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
+                i === current ? "opacity-100" : "opacity-0"
+              }`}
+              loading={i === 0 ? "eager" : "lazy"}
+            />
+          ))}
+          {/* Overlay info */}
+          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-4 z-10">
+            <p className="text-white text-xs font-medium">{heroImages[current].author}</p>
+            <div className="flex items-center gap-1 mt-0.5">
+              <span className="text-gold text-sm font-bold">{heroImages[current].engagement}</span>
+              <span className="text-white/60 text-[10px]">réactions</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom bar */}
+        <div className="h-1 w-28 mx-auto bg-white/30 rounded-full my-2" />
+      </div>
+
+      {/* Dots */}
+      <div className="flex justify-center gap-1.5 mt-3">
+        {heroImages.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setCurrent(i)}
+            className={`w-1.5 h-1.5 rounded-full transition-all ${
+              i === current ? "bg-gold w-4" : "bg-white/30"
+            }`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
 
 const HeroSection = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -44,7 +104,7 @@ const HeroSection = () => {
       dx: (Math.random() - 0.5) * 0.3,
       dy: (Math.random() - 0.5) * 0.3,
       opacity: Math.random() * 0.4 + 0.1,
-      hue: 260 + Math.random() * 40, // purple range
+      hue: 260 + Math.random() * 40,
     }));
 
     const draw = () => {
@@ -81,7 +141,6 @@ const HeroSection = () => {
       />
       {/* Animated Aurora Background */}
       <div className="absolute inset-0 overflow-hidden">
-        {/* Main purple glow */}
         <div
           className="absolute w-[800px] h-[800px] rounded-full opacity-30"
           style={{
@@ -91,7 +150,6 @@ const HeroSection = () => {
             animation: "auroraFloat1 8s ease-in-out infinite",
           }}
         />
-        {/* Secondary glow */}
         <div
           className="absolute w-[600px] h-[600px] rounded-full opacity-20"
           style={{
@@ -101,7 +159,6 @@ const HeroSection = () => {
             animation: "auroraFloat2 10s ease-in-out infinite",
           }}
         />
-        {/* Deep blue accent */}
         <div
           className="absolute w-[500px] h-[500px] rounded-full opacity-15"
           style={{
@@ -111,7 +168,6 @@ const HeroSection = () => {
             animation: "auroraFloat3 12s ease-in-out infinite",
           }}
         />
-        {/* Light streaks */}
         {[...Array(6)].map((_, i) => (
           <div
             key={i}
@@ -129,81 +185,68 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 text-center max-w-4xl">
-        <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2 mb-8 animate-fade-in">
-          <Linkedin className="w-4 h-4 text-gold" />
-          <span className="text-white/80 text-sm font-medium">Coaching 1:1 · Prompts IA personnalisés</span>
-        </div>
-
-        <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] mb-6 animate-fade-in-delay-1">
-          Transformez votre histoire en{" "}
-          <span className="text-gold">1 post LinkedIn par jour</span>{" "}
-          qui génère des leads
-        </h1>
-
-        <p className="text-lg sm:text-xl text-white/70 mb-10 max-w-2xl mx-auto animate-fade-in-delay-2">
-          20 jours · 20 posts · Profil optimisé · Offre + Landing page inclus.
-          Feedback et correction sur chaque post.
-        </p>
-
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-delay-3">
-          <Button
-            asChild
-            size="lg"
-            className="bg-gold text-navy-deep hover:bg-gold-hover font-display font-bold text-base px-8 py-6 rounded-full shadow-lg shadow-gold/20 transition-all hover:shadow-xl hover:shadow-gold/30 hover:scale-105"
-          >
-            <a href="#investissement">
-              Réservez votre place
-              <ArrowRight className="w-5 h-5 ml-1" />
-            </a>
-          </Button>
-          <Button
-            asChild
-            size="lg"
-            variant="outline"
-            className="border-white/30 text-white hover:bg-white/10 font-display font-bold text-base px-8 py-6 rounded-full transition-all hover:border-white/50"
-          >
-            <a href="#vehicule">
-              <Eye className="w-5 h-5 mr-1" />
-              Voir le programme
-            </a>
-          </Button>
-        </div>
-      </div>
-
-      {/* Tilted Image Gallery */}
-      <div className="relative z-10 w-full mt-16 animate-fade-in-delay-3">
-        <div className="absolute -top-4 left-[10%] sm:left-[15%] z-20 bg-gold text-navy-deep text-xs font-bold px-3 py-1.5 rounded-full shadow-lg animate-fade-in-delay-2">
-          Coaching 1:1
-        </div>
-        <div className="absolute -top-4 right-[10%] sm:right-[15%] z-20 bg-white/90 text-navy-deep text-xs font-bold px-3 py-1.5 rounded-full shadow-lg animate-fade-in-delay-2">
-          <Bot className="w-3 h-3 inline mr-1" />
-          IA Prompts
-        </div>
-
-        <div className="flex justify-center items-end gap-4 sm:gap-6 px-4 overflow-hidden" style={{ perspective: "1000px" }}>
-          {heroImages.map((img, i) => (
-            <div
-              key={i}
-              className={`relative flex-shrink-0 w-36 h-48 sm:w-48 sm:h-64 md:w-56 md:h-72 rounded-2xl overflow-hidden transform ${img.rotation} transition-transform duration-500 hover:rotate-0 hover:scale-105 shadow-2xl`}
-              style={{ transformOrigin: "bottom center" }}
-            >
-              <img
-                src={img.src}
-                alt={img.alt}
-                className="w-full h-full object-cover"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
-              <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-3 pointer-events-none">
-                <p className="text-white text-[10px] sm:text-xs font-medium truncate">{img.author}</p>
-                <div className="flex items-center gap-1 mt-0.5">
-                  <span className="text-gold text-xs sm:text-sm font-bold">{img.engagement}</span>
-                  <span className="text-white/60 text-[9px] sm:text-[10px]">réactions</span>
-                </div>
-              </div>
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 max-w-5xl">
+        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+          {/* Left: Text */}
+          <div className="flex-1 text-center lg:text-left">
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2 mb-8 animate-fade-in">
+              <Linkedin className="w-4 h-4 text-gold" />
+              <span className="text-white/80 text-sm font-medium">Coaching 1:1 · 20 jours</span>
             </div>
-          ))}
+
+            <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.1] mb-6 animate-fade-in-delay-1">
+              <span className="text-gold italic">20 Pas</span> sur{" "}
+              <span className="text-gold italic">20 Jours</span>
+            </h1>
+
+            <p className="text-lg sm:text-xl text-white/80 mb-4 max-w-xl animate-fade-in-delay-2 font-medium">
+              Vous avez mille possibilités avec l'IA, mais vous restez bloqué au stade 0 ?
+            </p>
+
+            <p className="text-base text-white/60 mb-10 max-w-xl animate-fade-in-delay-2">
+              En 20 jours, publiez votre premier post LinkedIn aligné avec qui vous êtes vraiment — pas ce que l'IA décide pour vous. Coaching 1:1, exercices quotidiens, feedback sur chaque post.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center animate-fade-in-delay-3">
+              <Button
+                asChild
+                size="lg"
+                className="bg-gold text-navy-deep hover:bg-gold-hover font-display font-bold text-base px-8 py-6 rounded-full shadow-lg shadow-gold/20 transition-all hover:shadow-xl hover:shadow-gold/30 hover:scale-105"
+              >
+                <a href="#investissement">
+                  Réservez votre place
+                  <ArrowRight className="w-5 h-5 ml-1" />
+                </a>
+              </Button>
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                className="border-white/30 text-white hover:bg-white/10 font-display font-bold text-base px-8 py-6 rounded-full transition-all hover:border-white/50"
+              >
+                <a href="#vehicule">
+                  <Eye className="w-5 h-5 mr-1" />
+                  Voir le programme
+                </a>
+              </Button>
+            </div>
+          </div>
+
+          {/* Right: Phone Mockup */}
+          <div className="flex-shrink-0 animate-fade-in-delay-2">
+            <div className="relative">
+              {/* Floating badges */}
+              <div className="absolute -top-4 -left-6 z-20 bg-gold text-navy-deep text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
+                Coaching 1:1
+              </div>
+              <div className="absolute -top-4 -right-6 z-20 bg-white/90 text-navy-deep text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
+                <Bot className="w-3 h-3 inline mr-1" />
+                IA Prompts
+              </div>
+              
+              <PhoneMockup />
+            </div>
+          </div>
         </div>
       </div>
 
