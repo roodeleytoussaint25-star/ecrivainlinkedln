@@ -7,8 +7,7 @@ const CTASection = () => {
       <section className="bg-gradient-to-b from-navy to-navy-mid paper-texture-dark py-20 sm:py-28">
         <div className="container mx-auto px-4 sm:px-6 max-w-3xl text-center observe-section">
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-6 leading-tight">
-            Réservez votre accompagnement 20 jours et commencez à publier vos{" "}
-            <span className="text-gold">premiers posts stratégiques</span> dès demain
+            Faites vos <span className="text-gold italic">20 Pas sur 20 Jours</span> et publiez vos premiers posts LinkedIn alignés avec vous
           </h2>
 
           <p className="text-white/65 mb-10 max-w-lg mx-auto">
@@ -44,7 +43,7 @@ const CTASection = () => {
       <footer className="bg-navy-deep py-8 border-t border-white/5">
         <div className="container mx-auto px-4 text-center">
           <p className="font-display text-white/30 text-sm">
-            © 2026 Toussaint Roodeley · Programme LinkedIn Intensive 1:1
+            © 2026 Toussaint Roodeley · 20 Pas sur 20 Jours
           </p>
         </div>
       </footer>
