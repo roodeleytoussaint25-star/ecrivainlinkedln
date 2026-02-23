@@ -28,7 +28,7 @@ const PhoneMockup = () => {
   }, []);
 
   return (
-    <div className="relative mx-auto w-[260px] sm:w-[280px]">
+    <div className="relative mx-auto w-[220px] sm:w-[260px] md:w-[280px]">
       {/* Phone frame */}
       <div className="relative rounded-[2.5rem] border-[6px] border-white/20 bg-black/80 backdrop-blur-sm shadow-2xl shadow-black/40 overflow-hidden">
         {/* Notch */}

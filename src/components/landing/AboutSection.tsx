@@ -7,7 +7,7 @@ const AboutSection = () => {
         <div className="observe-section flex flex-col md:flex-row items-center gap-10 md:gap-14">
           {/* Photo placeholder */}
           <div className="shrink-0">
-            <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-3xl bg-gradient-to-br from-gold/20 to-white/5 border border-white/15 flex items-center justify-center overflow-hidden">
+            <div className="w-36 h-36 sm:w-48 sm:h-48 md:w-56 md:h-56 rounded-3xl bg-gradient-to-br from-gold/20 to-white/5 border border-white/15 flex items-center justify-center overflow-hidden">
               <span className="text-white/30 text-xs font-medium uppercase tracking-wider text-center px-4">
                 Photo à venir
               </span>

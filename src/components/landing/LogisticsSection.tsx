@@ -36,7 +36,7 @@ const LogisticsSection = () => {
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
           {logisticsCards.map((card, i) => (
             <div
               key={i}

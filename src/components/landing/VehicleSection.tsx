@@ -95,7 +95,7 @@ const VehicleSection = () => {
               >
                 <div className={`flex flex-col ${index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"} gap-6 md:gap-0`}>
                   {/* Mockup placeholder */}
-                  <div className="md:w-2/5 flex items-center justify-center p-8 sm:p-10">
+                  <div className="md:w-2/5 flex items-center justify-center p-6 sm:p-10">
                     <div className="w-full aspect-[4/3] rounded-2xl bg-gradient-to-br from-white/10 to-white/5 border border-white/10 flex flex-col items-center justify-center gap-3">
                       <method.icon className="w-12 h-12 text-gold/60" />
                       <span className="text-white/40 text-xs font-medium uppercase tracking-wider">
@@ -105,7 +105,7 @@ const VehicleSection = () => {
                   </div>
 
                   {/* Content */}
-                  <div className="md:w-3/5 p-8 sm:p-10 flex flex-col justify-center">
+                  <div className="md:w-3/5 p-6 pt-0 md:pt-6 sm:p-10 flex flex-col justify-center">
                     <span className="font-display text-5xl font-bold text-gold/20 mb-2">
                       {method.num}
                     </span>
