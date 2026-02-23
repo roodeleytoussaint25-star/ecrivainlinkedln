@@ -18,22 +18,26 @@ const heroImages = [
 const PARTICLE_COUNT = 40;
 
 const fanCards = [
-  { src: hero1, alt: "Post LinkedIn Sophie Bidaux", rotate: "-12deg", translate: "0px, 0px", z: 1 },
-  { src: hero2, alt: "Post LinkedIn Sophie Bidaux", rotate: "-6deg", translate: "20px, 15px", z: 2 },
-  { src: hero3, alt: "Post LinkedIn Sophie Bidaux", rotate: "0deg", translate: "40px, 30px", z: 5 },
-  { src: hero4, alt: "Post LinkedIn Hugo Marquet", rotate: "6deg", translate: "60px, 45px", z: 4 },
-  { src: hero5, alt: "Post LinkedIn Hugo Marquet", rotate: "12deg", translate: "80px, 60px", z: 3 },
+  { src: hero1, alt: "Post LinkedIn Sophie Bidaux", rotate: "-12deg", x: "-60px", y: "30px", z: 1 },
+  { src: hero2, alt: "Post LinkedIn Sophie Bidaux", rotate: "-6deg", x: "-30px", y: "15px", z: 2 },
+  { src: hero3, alt: "Post LinkedIn Sophie Bidaux", rotate: "0deg", x: "0px", y: "0px", z: 5 },
+  { src: hero4, alt: "Post LinkedIn Hugo Marquet", rotate: "6deg", x: "30px", y: "15px", z: 4 },
+  { src: hero5, alt: "Post LinkedIn Hugo Marquet", rotate: "12deg", x: "60px", y: "30px", z: 3 },
 ];
 
 const PostsFan = () => (
-  <div className="relative w-[300px] h-[350px] sm:w-[420px] sm:h-[420px]">
+  <div className="relative w-[300px] h-[300px] sm:w-[400px] sm:h-[380px] flex items-center justify-center">
     {fanCards.map((card, i) => (
       <div
         key={i}
-        className="absolute top-0 left-0 w-[130px] sm:w-[180px] rounded-xl bg-white p-1 shadow-xl shadow-black/30 transition-transform duration-300 hover:scale-105"
+        className="absolute w-[120px] sm:w-[160px] rounded-xl bg-white p-1 shadow-xl shadow-black/30 transition-transform duration-300 hover:scale-110 hover:!z-10"
         style={{
-          transform: `rotate(${card.rotate}) translate(${card.translate})`,
+          transform: `rotate(${card.rotate}) translateX(${card.x}) translateY(${card.y})`,
           zIndex: card.z,
+          top: "50%",
+          left: "50%",
+          marginTop: "-100px",
+          marginLeft: "-60px",
         }}
       >
         <img
