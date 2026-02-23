@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from "react";
-import { ArrowRight, Eye, Linkedin, Bot, ChevronLeft, ChevronRight } from "lucide-react";
+import { useEffect, useRef } from "react";
+import { ArrowRight, Eye, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import hero1 from "@/assets/hero/hero-1.png";
 import hero2 from "@/assets/hero/hero-2.png";
@@ -17,65 +17,33 @@ const heroImages = [
 
 const PARTICLE_COUNT = 40;
 
-const PhoneMockup = () => {
-  const [current, setCurrent] = useState(0);
+const fanCards = [
+  { src: hero1, alt: "Post LinkedIn Sophie Bidaux", rotate: "-8deg", translate: "0px, 0px", z: 1 },
+  { src: hero4, alt: "Post LinkedIn Hugo Marquet", rotate: "0deg", translate: "30px, 20px", z: 3 },
+  { src: hero5, alt: "Post LinkedIn Hugo Marquet", rotate: "8deg", translate: "60px, 40px", z: 2 },
+];
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrent((c) => (c + 1) % heroImages.length);
-    }, 3000);
-    return () => clearInterval(timer);
-  }, []);
-
-  return (
-    <div className="relative mx-auto w-[220px] sm:w-[260px] md:w-[280px]">
-      {/* Phone frame */}
-      <div className="relative rounded-[2.5rem] border-[6px] border-white/20 bg-black/80 backdrop-blur-sm shadow-2xl shadow-black/40 overflow-hidden">
-        {/* Notch */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-6 bg-black rounded-b-2xl z-20" />
-        
-        {/* Screen */}
-        <div className="relative aspect-[9/17] overflow-hidden">
-          {heroImages.map((img, i) => (
-            <img
-              key={i}
-              src={img.src}
-              alt={img.alt}
-              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
-                i === current ? "opacity-100" : "opacity-0"
-              }`}
-              loading={i === 0 ? "eager" : "lazy"}
-            />
-          ))}
-          {/* Overlay info */}
-          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-4 z-10">
-            <p className="text-white text-xs font-medium">{heroImages[current].author}</p>
-            <div className="flex items-center gap-1 mt-0.5">
-              <span className="text-gold text-sm font-bold">{heroImages[current].engagement}</span>
-              <span className="text-white/60 text-[10px]">réactions</span>
-            </div>
-          </div>
-        </div>
-
-        {/* Bottom bar */}
-        <div className="h-1 w-28 mx-auto bg-white/30 rounded-full my-2" />
+const PostsFan = () => (
+  <div className="relative w-[280px] h-[320px] sm:w-[350px] sm:h-[380px]">
+    {fanCards.map((card, i) => (
+      <div
+        key={i}
+        className="absolute top-0 left-0 w-[130px] sm:w-[180px] rounded-xl bg-white p-1 shadow-xl shadow-black/30 transition-transform duration-300 hover:scale-105"
+        style={{
+          transform: `rotate(${card.rotate}) translate(${card.translate})`,
+          zIndex: card.z,
+        }}
+      >
+        <img
+          src={card.src}
+          alt={card.alt}
+          className="w-full h-auto rounded-lg"
+          loading={i === 0 ? "eager" : "lazy"}
+        />
       </div>
-
-      {/* Dots */}
-      <div className="flex justify-center gap-1.5 mt-3">
-        {heroImages.map((_, i) => (
-          <button
-            key={i}
-            onClick={() => setCurrent(i)}
-            className={`w-1.5 h-1.5 rounded-full transition-all ${
-              i === current ? "bg-gold w-4" : "bg-white/30"
-            }`}
-          />
-        ))}
-      </div>
-    </div>
-  );
-};
+    ))}
+  </div>
+);
 
 const HeroSection = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -232,20 +200,9 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Right: Phone Mockup */}
+          {/* Right: Posts Fan */}
           <div className="flex-shrink-0 animate-fade-in-delay-2">
-            <div className="relative">
-              {/* Floating badges */}
-              <div className="absolute -top-4 -left-6 z-20 bg-gold text-navy-deep text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
-                Coaching 1:1
-              </div>
-              <div className="absolute -top-4 -right-6 z-20 bg-white/90 text-navy-deep text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
-                <Bot className="w-3 h-3 inline mr-1" />
-                IA Prompts
-              </div>
-              
-              <PhoneMockup />
-            </div>
+            <PostsFan />
           </div>
         </div>
       </div>
