@@ -1,16 +1,22 @@
-import { Check, ArrowRight } from "lucide-react";
+import { Check, ArrowRight, AlertTriangle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const included = [
   "20 jours de coaching 1:1 intensif",
-  "Profil LinkedIn optimisé de A à Z",
-  "20 posts engageants créés et corrigés",
+  "Méthode Fondation™ — stratégie + profil optimisé",
+  "Méthode Écriture™ — 20 posts créés et corrigés",
+  "Méthode Croissance™ — prospection + tunnel de vente",
   "Landing page opérationnelle incluse",
-  "Suivi complet IA + feedback quotidien",
-  "Offre personnalisée structurée",
-  "Prompts IA personnalisés (50+ prompts)",
-  "Accès aux templates et frameworks",
-  "Plan post-20 jours pour autonomie",
+  "Suivi quotidien + feedback personnalisé",
+  "Plan d'autonomie post-20 jours",
+];
+
+const bonuses = [
+  "50+ prompts IA personnalisés",
+  "Templates accroches & fins de posts",
+  "Framework copywriting avancé",
+  "Guide visuels pro (Lightroom + IA)",
+  "Modèles de messages de prospection",
 ];
 
 const InvestmentSection = () => {
@@ -24,10 +30,11 @@ const InvestmentSection = () => {
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-2">
             Tout ce dont vous avez besoin
           </h2>
-          <p className="text-white/65">pour transformer votre présence LinkedIn en 20 jours</p>
+          <p className="text-white/65">pour passer du stade 0 à une présence LinkedIn alignée en 20 jours</p>
         </div>
 
-        <div className="observe-section bg-white/8 backdrop-blur-sm border border-gold/20 rounded-3xl p-8 sm:p-12 max-w-2xl mx-auto">
+        {/* Price card */}
+        <div className="observe-section bg-white/8 backdrop-blur-sm border border-gold/20 rounded-3xl p-8 sm:p-12 max-w-2xl mx-auto mb-8">
           <div className="text-center mb-8">
             <div className="flex items-baseline justify-center gap-1">
               <span className="font-display text-6xl sm:text-7xl font-bold text-gold">100</span>
@@ -36,15 +43,32 @@ const InvestmentSection = () => {
             <p className="text-white/50 text-sm mt-2">Paiement unique · Accès complet 20 jours</p>
           </div>
 
-          <div className="space-y-3 mb-10">
-            {included.map((item, i) => (
-              <div key={i} className="flex items-start gap-3">
-                <div className="w-5 h-5 shrink-0 rounded-full bg-gold/20 flex items-center justify-center mt-0.5">
-                  <Check className="w-3 h-3 text-gold" />
+          {/* Included */}
+          <div className="mb-6">
+            <p className="text-white/40 text-xs font-semibold uppercase tracking-wider mb-3">Le programme</p>
+            <div className="space-y-2.5">
+              {included.map((item, i) => (
+                <div key={i} className="flex items-start gap-3">
+                  <div className="w-5 h-5 shrink-0 rounded-full bg-gold/20 flex items-center justify-center mt-0.5">
+                    <Check className="w-3 h-3 text-gold" />
+                  </div>
+                  <span className="text-white/80 text-sm">{item}</span>
                 </div>
-                <span className="text-white/80 text-sm">{item}</span>
-              </div>
-            ))}
+              ))}
+            </div>
+          </div>
+
+          {/* Bonuses */}
+          <div className="mb-10 border-t border-white/10 pt-6">
+            <p className="text-gold/70 text-xs font-semibold uppercase tracking-wider mb-3">+ Bonus offerts</p>
+            <div className="space-y-2">
+              {bonuses.map((item, i) => (
+                <div key={i} className="flex items-start gap-3">
+                  <span className="text-gold text-sm mt-0.5 shrink-0">✦</span>
+                  <span className="text-white/65 text-sm">{item}</span>
+                </div>
+              ))}
+            </div>
           </div>
 
           <Button
@@ -57,6 +81,25 @@ const InvestmentSection = () => {
               <ArrowRight className="w-5 h-5 ml-1" />
             </a>
           </Button>
+        </div>
+
+        {/* Why so cheap */}
+        <div className="observe-section max-w-2xl mx-auto bg-gold/5 border border-gold/15 rounded-2xl p-6 sm:p-8">
+          <div className="flex gap-4">
+            <div className="shrink-0 w-10 h-10 rounded-full bg-gold/15 flex items-center justify-center mt-0.5">
+              <AlertTriangle className="w-5 h-5 text-gold" />
+            </div>
+            <div>
+              <h4 className="font-display text-lg font-bold text-white mb-2">
+                Pourquoi seulement 100€ ?
+              </h4>
+              <p className="text-white/60 text-sm leading-relaxed">
+                Ce prix est temporaire. Je lance ce programme en version test pour affiner la méthode avec les premiers participants. 
+                Une fois validé, le prix sera <span className="text-gold font-semibold">multiplié par 150</span>. 
+                Si vous lisez cette page, c'est que vous faites partie des premiers — profitez-en avant que le prix change.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
