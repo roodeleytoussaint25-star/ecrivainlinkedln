@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
 import { ArrowRight, Eye } from "lucide-react";
-import LinkedInLogo from "@/components/LinkedInLogo";
 import { Button } from "@/components/ui/button";
 import hero1 from "@/assets/hero/hero-1.png";
 import hero2 from "@/assets/hero/hero-2.png";
@@ -159,9 +158,9 @@ const HeroSection = () => {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2 animate-fade-in">
           <svg viewBox="0 0 76 22" className="h-4 w-auto" aria-label="LinkedIn">
-           <text x="0" y="17" className="font-bold" style={{ fontSize: "18px", fill: "#0A66C2", fontFamily: "system-ui, sans-serif" }}>Linked</text>
-            <rect x="52" y="2" width="22" height="18" rx="3" fill="#0A66C2" />
-            <text x="55" y="17" className="font-bold" style={{ fontSize: "18px", fill: "white", fontFamily: "system-ui, sans-serif" }}>in</text>
+            <text x="0" y="17" className="font-bold" style={{ fontSize: "18px", fill: "white", fontFamily: "system-ui, sans-serif" }}>Linked</text>
+            <rect x="52" y="2" width="22" height="18" rx="3" fill="hsl(var(--gold))" />
+            <text x="55" y="17" className="font-bold" style={{ fontSize: "18px", fill: "hsl(var(--navy-deep))", fontFamily: "system-ui, sans-serif" }}>in</text>
           </svg>
           <span className="text-white/80 text-sm font-medium">Coaching 1:1 · 20 jours</span>
         </div>
@@ -169,7 +168,7 @@ const HeroSection = () => {
         {/* Title */}
         <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.1] animate-fade-in-delay-1">
           Écrivez et publiez{" "}
-          <span className="text-gold">20 posts <LinkedInLogo className="h-8 sm:h-10 lg:h-12" /></span>{" "}
+          <span className="text-gold">20 posts LinkedIn</span>{" "}
           qui attirent vos premiers clients
           <br />
           en <span className="text-gold">20 jours</span>

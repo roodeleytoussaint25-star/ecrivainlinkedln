@@ -4,7 +4,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import LinkedInLogo from "@/components/LinkedInLogo";
 
 const faqs = [
   {
@@ -16,7 +15,7 @@ const faqs = [
     a: "Le coaching est 100% en ligne et en 1:1. On communique quotidiennement par messagerie pour les exercices et feedbacks, avec des sessions vidéo planifiées selon vos besoins.",
   },
   {
-    q: <>Faut-il déjà avoir un profil <LinkedInLogo className="h-3.5" /> actif ?</>,
+    q: "Faut-il déjà avoir un profil LinkedIn actif ?",
     a: "Non. Le programme commence par la Méthode Fondation™ qui clarifie votre voix et votre niche. Que vous ayez 0 ou 5 000 abonnés, on part de vos fondations.",
   },
   {

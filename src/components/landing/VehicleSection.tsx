@@ -1,5 +1,4 @@
 import { Linkedin, Target, PenTool, TrendingUp, Gift, Check } from "lucide-react";
-import LinkedInLogo from "@/components/LinkedInLogo";
 
 const methods = [
   {
@@ -12,7 +11,7 @@ const methods = [
     highlights: [
       "Niche creusée en profondeur",
       "Voix unique définie",
-      <>Profil <LinkedInLogo className="h-3.5" /> qui convertit</>,  
+      "Profil LinkedIn qui convertit",
       "Offre alignée avec votre expertise",
     ],
   },
@@ -72,7 +71,7 @@ const VehicleSection = () => {
             <span className="text-gold">retrouver votre voix et attirer vos clients</span>
           </h2>
           <p className="text-white/60 text-base sm:text-lg leading-relaxed">
-            Un coaching 1:1 structuré pour passer de zéro à une présence <LinkedInLogo className="h-4" /> authentique qui génère des opportunités — en 20 jours.
+            Un coaching 1:1 structuré pour passer de zéro à une présence LinkedIn authentique qui génère des opportunités — en 20 jours.
           </p>
         </div>
 

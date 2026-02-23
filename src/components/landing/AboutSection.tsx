@@ -1,5 +1,4 @@
 import { Linkedin } from "lucide-react";
-import LinkedInLogo from "@/components/LinkedInLogo";
 
 const AboutSection = () => {
   return (
@@ -41,7 +40,7 @@ const AboutSection = () => {
               className="inline-flex items-center gap-2 mt-5 text-gold hover:text-gold-hover transition-colors text-sm font-semibold"
             >
               <Linkedin className="w-4 h-4" />
-              Voir mon profil <LinkedInLogo className="h-3.5" />
+              Voir mon profil LinkedIn
             </a>
           </div>
         </div>
