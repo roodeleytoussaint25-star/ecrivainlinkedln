@@ -5,7 +5,7 @@ const CTASection = () => {
   return (
     <>
       <section className="bg-gradient-to-b from-navy to-navy-mid paper-texture-dark py-20 sm:py-28">
-        <div className="container mx-auto px-4 sm:px-6 max-w-3xl text-center observe-section">
+        <div className="container mx-auto px-4 sm:px-6 max-w-3xl text-center">
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-6 leading-tight">
             Faites vos <span className="text-gold italic">20 Pas sur 20 Jours</span> et publiez vos premiers posts LinkedIn alignés avec vous
           </h2>
