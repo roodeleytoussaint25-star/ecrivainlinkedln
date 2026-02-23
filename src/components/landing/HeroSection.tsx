@@ -18,13 +18,15 @@ const heroImages = [
 const PARTICLE_COUNT = 40;
 
 const fanCards = [
-  { src: hero1, alt: "Post LinkedIn Sophie Bidaux", rotate: "-8deg", translate: "0px, 0px", z: 1 },
-  { src: hero4, alt: "Post LinkedIn Hugo Marquet", rotate: "0deg", translate: "30px, 20px", z: 3 },
-  { src: hero5, alt: "Post LinkedIn Hugo Marquet", rotate: "8deg", translate: "60px, 40px", z: 2 },
+  { src: hero1, alt: "Post LinkedIn Sophie Bidaux", rotate: "-12deg", translate: "0px, 0px", z: 1 },
+  { src: hero2, alt: "Post LinkedIn Sophie Bidaux", rotate: "-6deg", translate: "20px, 15px", z: 2 },
+  { src: hero3, alt: "Post LinkedIn Sophie Bidaux", rotate: "0deg", translate: "40px, 30px", z: 5 },
+  { src: hero4, alt: "Post LinkedIn Hugo Marquet", rotate: "6deg", translate: "60px, 45px", z: 4 },
+  { src: hero5, alt: "Post LinkedIn Hugo Marquet", rotate: "12deg", translate: "80px, 60px", z: 3 },
 ];
 
 const PostsFan = () => (
-  <div className="relative w-[280px] h-[320px] sm:w-[350px] sm:h-[380px]">
+  <div className="relative w-[300px] h-[350px] sm:w-[420px] sm:h-[420px]">
     {fanCards.map((card, i) => (
       <div
         key={i}
