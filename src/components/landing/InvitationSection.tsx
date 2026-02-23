@@ -31,21 +31,21 @@ const SketchBrain = () => (
 const cards = [
   {
     icon: SketchX,
-    title: "Trop de",
-    highlight: "possibilités",
-    text: "L'IA peut tout faire : posts, carrousels, stratégies… Résultat ? Vous êtes paralysé par les options et vous ne faites rien. Le paradoxe du choix vous bloque au stade 0.",
+    title: "Votre contenu",
+    highlight: "sonne faux",
+    text: "L'IA écrit vite, mais pas comme vous. Résultat : des posts génériques que n'importe qui pourrait publier. Votre audience le sent — et scroll sans réagir. Vous perdez votre voix à chaque prompt.",
   },
   {
     icon: SketchForbidden,
-    title: "Pas aligné avec",
-    highlight: "vous-même",
-    text: "Les posts générés par l'IA sonnent faux. Vous voulez publier quelque chose qui vous ressemble vraiment, pas un copier-coller générique que n'importe qui pourrait poster.",
+    title: "Vous publiez dans",
+    highlight: "le vide",
+    text: "Vous postez, vous attendez... rien. Pas de likes, pas de commentaires, pas de messages. Le doute s'installe : \"Pourquoi personne ne réagit ?\" La fatigue mentale remplace l'enthousiasme.",
   },
   {
     icon: SketchBrain,
-    title: "Bloqué au",
-    highlight: "stade 0",
-    text: "Vous savez que LinkedIn peut transformer votre carrière. Vous avez les outils, les idées, l'envie — mais vous n'avez toujours pas publié votre premier post.",
+    title: "Vous n'arrivez pas à",
+    highlight: "vendre",
+    text: "Vous savez que LinkedIn peut transformer votre activité. Mais entre publier et trouver des clients, il y a un gouffre. Vous accumulez les formations sans agir, vous copiez d'autres créateurs — toujours au stade zéro.",
   },
 ];
 
@@ -56,8 +56,8 @@ const InvitationSection = () => {
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 max-w-5xl">
         <h2 className="font-display text-3xl sm:text-4xl font-bold text-white text-center mb-14 observe-section">
-          Ce qui vous empêche de{" "}
-          <span className="text-gold italic">passer à l'action</span>
+          Pourquoi vos posts ne génèrent{" "}
+          <span className="text-gold italic">ni engagement, ni clients</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -110,8 +110,8 @@ const InvitationSection = () => {
 
         <div className="observe-section mt-14 bg-gold/10 border border-gold/20 rounded-2xl p-6 sm:p-8 text-center max-w-2xl mx-auto">
           <p className="font-display text-lg sm:text-xl font-semibold text-gold">
-            Le vrai problème n'est pas l'IA — c'est de ne pas savoir comment
-            l'utiliser pour raconter <em>votre</em> histoire.
+            Le vrai problème n'est pas l'IA — c'est de ne pas savoir transformer
+            vos idées et votre vécu en messages qui attirent <em>les bons clients</em>.
           </p>
         </div>
       </div>

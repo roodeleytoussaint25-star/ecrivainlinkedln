@@ -167,8 +167,11 @@ const HeroSection = () => {
 
         {/* Title */}
         <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.1] animate-fade-in-delay-1">
-          <span className="text-gold italic">20 Pas</span> sur{" "}
-          <span className="text-gold italic">20 Jours.</span>
+          <span className="text-white/90 italic">Vous utilisez l'IA.</span>{" "}
+          <span className="text-white/90">Personne ne réagit.</span>
+          <br />
+          En <span className="text-gold italic">20 jours</span>, trouvez votre voix et attirez vos{" "}
+          <span className="text-gold italic">premiers clients.</span>
         </h1>
 
         {/* Images row — full width */}
@@ -178,7 +181,7 @@ const HeroSection = () => {
 
         {/* Subtitle */}
         <p className="text-lg sm:text-xl text-white/80 max-w-2xl animate-fade-in-delay-2 font-medium">
-          En 20 jours, publiez votre premier post LinkedIn aligné avec qui vous êtes vraiment — pas ce que l'IA décide pour vous.
+          Vous avez les outils, les idées, l'envie — mais vos posts sonnent creux et personne ne vous contacte. Ce coaching 1:1 transforme vos idées et expériences en une voix unique qui attire une audience prête à agir.
         </p>
 
         {/* CTAs */}

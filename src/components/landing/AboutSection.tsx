@@ -24,13 +24,13 @@ const AboutSection = () => {
             </h2>
             <div className="space-y-3 text-white/65 text-sm leading-relaxed">
               <p>
-                Je suis passé de 0 à une présence LinkedIn qui génère des opportunités chaque semaine — en utilisant l'IA comme assistant, pas comme béquille.
+                J'ai vécu exactement ce que vous vivez : des posts sans réaction, le doute, la peur de ne jamais être reconnu pour mes idées.
               </p>
               <p>
-                J'ai développé les 3 méthodes propriétaires (Fondation™, Écriture™, Croissance™) après des mois d'expérimentation et des centaines de posts. Mon approche : écrire authentiquement avec l'IA à vos côtés, jamais à votre place.
+                J'ai trouvé ma voix en utilisant l'IA comme assistant — pas comme béquille. J'ai développé les 3 méthodes propriétaires (Fondation™, Écriture™, Croissance™) après des mois d'expérimentation et des centaines de posts.
               </p>
               <p>
-                Aujourd'hui, j'accompagne ceux qui veulent sortir du stade 0 et construire une présence LinkedIn alignée avec qui ils sont vraiment.
+                Aujourd'hui, j'accompagne les créateurs et entrepreneurs qui veulent transformer leur vécu en contenu qui attire les bons clients.
               </p>
             </div>
             <a

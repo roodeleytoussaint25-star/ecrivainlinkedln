@@ -21,16 +21,13 @@ const ProofSection = () => {
             </h2>
             <div className="space-y-4 text-white/70 leading-relaxed">
               <p>
-                Le rôle du contenu est simple : partager nos valeurs pour qu'on ait envie de travailler avec nous.
+                Le contenu a un seul rôle : montrer qui vous êtes pour que les bonnes personnes aient envie de travailler avec vous.
               </p>
               <p>
-                Le problème avec la majorité des contenus de nos jours, c'est qu'ils souhaitent plaire au maximum
-                de monde possible. Aujourd'hui, c'est pire, car les gens n'ont plus d'idées de contenu : les LLM
-                les génèrent à leur place.
+                Le problème ? La plupart des créateurs laissent l'IA décider de leur message. Résultat : du contenu sans émotion, sans point de vue, sans différenciation. L'audience ne vous reconnaît plus.
               </p>
               <p>
-                Aujourd'hui, les gens parlent avant de faire. Beaucoup tentent de devenir des grands créateurs
-                sans avoir eu leur premier client.
+                Ce qui manque, ce n'est pas un meilleur outil — c'est l'alignement entre votre voix, votre mission et votre audience.
               </p>
               <blockquote className="border-l-2 border-gold pl-4 mt-2">
                 <p className="text-gold font-display font-semibold text-lg italic">

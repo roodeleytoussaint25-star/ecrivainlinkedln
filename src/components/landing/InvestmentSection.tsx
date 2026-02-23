@@ -30,7 +30,7 @@ const InvestmentSection = () => {
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-2">
             Tout ce dont vous avez besoin
           </h2>
-          <p className="text-white/65">pour passer du stade 0 à une présence LinkedIn alignée en 20 jours</p>
+          <p className="text-white/65">pour passer de zéro à une voix LinkedIn unique qui attire vos premiers clients — en 20 jours</p>
         </div>
 
         {/* Price card */}

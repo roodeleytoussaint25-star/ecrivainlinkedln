@@ -1,12 +1,12 @@
 import { X } from "lucide-react";
 
 const disqualifiers = [
-  "Vous ne pouvez pas publier régulièrement",
-  "Vous souhaitez avoir des prompts pour écrire des posts à votre place",
-  "Vous cherchez des GPT « personnalisés » pour tout faire",
-  "Vous voulez que l'IA génère vos idées de contenu à la chaîne",
-  "Vous inventez une vie avec l'IA alors que vous n'avez rien vécu",
-  "Vous refusez d'utiliser l'IA comme assistant et feedback",
+  "Vous voulez que l'IA écrive tout à votre place",
+  "Vous cherchez des raccourcis sans vouloir expérimenter",
+  "Vous refusez de montrer qui vous êtes vraiment",
+  "Vous copiez d'autres créateurs au lieu de trouver votre voix",
+  "Vous accumulez les formations sans jamais publier",
+  "Vous inventez une vie avec l'IA au lieu de partager votre vécu",
 ];
 
 const DisqualificationSection = () => {

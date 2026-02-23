@@ -8,7 +8,7 @@ import {
 const faqs = [
   {
     q: "Combien de temps dure le programme ?",
-    a: "Exactement 20 jours. Chaque jour, vous recevez un exercice à faire et un feedback personnalisé sur votre travail. C'est intensif mais structuré pour que vous puissiez avancer à votre rythme.",
+    a: "Exactement 20 jours. Chaque jour, vous recevez un exercice concret et un feedback personnalisé. C'est intensif mais structuré pour que vous trouviez votre voix unique rapidement.",
   },
   {
     q: "Quel est le format du coaching ?",
@@ -16,23 +16,23 @@ const faqs = [
   },
   {
     q: "Faut-il déjà avoir un profil LinkedIn actif ?",
-    a: "Non. Le programme commence par la Méthode Fondation™ qui construit votre profil de zéro. Que vous ayez 0 ou 5 000 abonnés, on part de vos fondations.",
+    a: "Non. Le programme commence par la Méthode Fondation™ qui clarifie votre voix et votre niche. Que vous ayez 0 ou 5 000 abonnés, on part de vos fondations.",
   },
   {
     q: "Est-ce que l'IA va écrire mes posts à ma place ?",
-    a: "Non, et c'est tout l'intérêt. L'IA est votre assistant, pas votre remplaçant. Vous apprenez à utiliser l'IA pour structurer, améliorer et accélérer — mais la voix et les idées restent les vôtres.",
+    a: "Non, et c'est tout l'intérêt. L'IA est votre assistant, pas votre remplaçant. Vous apprenez à l'utiliser pour structurer et améliorer — mais votre voix, vos idées et votre authenticité restent au centre.",
   },
   {
     q: "Pourquoi le prix est-il si bas ?",
-    a: "C'est un lancement en version test. Je veux affiner la méthode avec les premiers participants avant d'augmenter le prix. Les premiers bêta-testeurs bénéficient d'un tarif qui sera multiplié par 150 une fois le programme validé.",
+    a: "C'est un lancement en version test avec seulement 5 premières places. Je veux affiner la méthode avec les premiers participants avant d'augmenter le prix. Si vous lisez cette page, profitez-en.",
   },
   {
     q: "Que se passe-t-il après les 20 jours ?",
-    a: "Vous repartez avec un plan d'autonomie complet : tous les frameworks, templates et prompts sont à vous. Vous saurez exactement quoi publier, comment et quand — sans dépendre de personne.",
+    a: "Vous repartez avec un plan d'autonomie complet : tous les frameworks, templates et prompts sont à vous. Vous saurez exactement comment attirer des clients avec votre voix unique — sans dépendre de personne.",
   },
   {
-    q: "Et si je ne suis pas satisfait ?",
-    a: "Si après 5 jours vous estimez que le programme ne vous convient pas, on en discute ensemble. Mon objectif est votre transformation, pas juste une vente.",
+    q: "J'ai peur de me montrer vulnérable en ligne…",
+    a: "C'est normal, et c'est justement ce qu'on travaille ensemble. L'authenticité ne veut pas dire tout révéler — c'est trouver le juste équilibre entre votre vécu et votre expertise. Je vous accompagne pas à pas.",
   },
 ];
 
