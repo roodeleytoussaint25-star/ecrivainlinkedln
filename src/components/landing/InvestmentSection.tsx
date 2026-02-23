@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 
 const included = [
   "20 jours de coaching 1:1 intensif",
-  "Méthode Fondation™ — stratégie + profil optimisé",
-  "Méthode Écriture™ — 20 posts créés et corrigés",
-  "Méthode Croissance™ — prospection + tunnel de vente",
+   "Méthode Fondation™ : stratégie + profil optimisé",
+   "Méthode Écriture™ : 20 posts créés et corrigés",
+   "Méthode Croissance™ : prospection + tunnel de vente",
   "Landing page opérationnelle incluse",
   "Suivi quotidien + feedback personnalisé",
   "Plan d'autonomie post-20 jours",
@@ -30,7 +30,7 @@ const InvestmentSection = () => {
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-2">
             Tout ce dont vous avez besoin
           </h2>
-          <p className="text-white/65">pour passer de zéro à une voix LinkedIn unique qui attire vos premiers clients — en 20 jours</p>
+          <p className="text-white/65">pour passer de zéro à une voix LinkedIn unique qui attire vos premiers clients en 20 jours</p>
         </div>
 
         {/* Price card */}
