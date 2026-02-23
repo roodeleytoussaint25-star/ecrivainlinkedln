@@ -12,7 +12,7 @@ const CTASection = () => {
           </h2>
 
           <p className="text-white/65 mb-10 max-w-lg mx-auto">
-            Places limitées — 5 places uniquement pour ce lancement
+            Places limitées : 5 places uniquement pour ce lancement
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

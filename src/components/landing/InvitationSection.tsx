@@ -33,7 +33,7 @@ const cards = [
     icon: SketchX,
     title: "Votre contenu",
     highlight: "sonne faux",
-    text: "L'IA écrit vite, mais pas comme vous. Résultat : des posts génériques que n'importe qui pourrait publier. Votre audience le sent — et scroll sans réagir. Vous perdez votre voix à chaque prompt.",
+    text: "L'IA écrit vite, mais pas comme vous. Résultat : des posts génériques que n'importe qui pourrait publier. Votre audience le sent et scroll sans réagir. Vous perdez votre voix à chaque prompt.",
   },
   {
     icon: SketchForbidden,
@@ -45,7 +45,7 @@ const cards = [
     icon: SketchBrain,
     title: "Vous n'arrivez pas à",
     highlight: "vendre",
-    text: "Vous savez que LinkedIn peut transformer votre activité. Mais entre publier et trouver des clients, il y a un gouffre. Vous accumulez les formations sans agir, vous copiez d'autres créateurs — toujours au stade zéro.",
+    text: "Vous savez que LinkedIn peut transformer votre activité. Mais entre publier et trouver des clients, il y a un gouffre. Vous accumulez les formations sans agir, vous copiez d'autres créateurs, toujours au stade zéro.",
   },
 ];
 
@@ -110,8 +110,8 @@ const InvitationSection = () => {
 
         <div className="observe-section mt-14 bg-gold/10 border border-gold/20 rounded-2xl p-6 sm:p-8 text-center max-w-2xl mx-auto">
           <p className="font-display text-lg sm:text-xl font-semibold text-gold">
-            Le vrai problème n'est pas l'IA — c'est de ne pas savoir transformer
-            vos idées et votre vécu en messages qui attirent <em>les bons clients</em>.
+             Le vrai problème n'est pas l'IA, c'est de ne pas savoir transformer
+             vos idées et votre vécu en messages qui attirent <em>les bons clients</em>.
           </p>
         </div>
       </div>

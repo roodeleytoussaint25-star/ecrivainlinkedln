@@ -181,7 +181,7 @@ const HeroSection = () => {
 
         {/* Subtitle */}
         <p className="text-lg sm:text-xl text-white/80 max-w-2xl animate-fade-in-delay-2 font-medium">
-          Un coaching 1:1 où vous écrivez, publiez et corrigez un post par jour — avec un feedback personnalisé à chaque étape.
+          Un coaching 1:1 où vous écrivez, publiez et corrigez un post par jour, avec un feedback personnalisé à chaque étape.
         </p>
         <p className="text-base sm:text-lg text-white/60 max-w-2xl animate-fade-in-delay-2">
           Pas une formation passive. Vous repartez avec 20 posts publiés, un profil optimisé, une offre claire et un tunnel de vente opérationnel.

@@ -27,7 +27,7 @@ const ProofSection = () => {
                 Le problème ? La plupart des créateurs laissent l'IA décider de leur message. Résultat : du contenu sans émotion, sans point de vue, sans différenciation. L'audience ne vous reconnaît plus.
               </p>
               <p>
-                Ce qui manque, ce n'est pas un meilleur outil — c'est l'alignement entre votre voix, votre mission et votre audience.
+                Ce qui manque, ce n'est pas un meilleur outil, c'est l'alignement entre votre voix, votre mission et votre audience.
               </p>
               <blockquote className="border-l-2 border-gold pl-4 mt-2">
                 <p className="text-gold font-display font-semibold text-lg">

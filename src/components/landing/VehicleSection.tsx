@@ -20,7 +20,7 @@ const methods = [
     name: "La Méthode Écriture™",
     tagline: "Créer du contenu engageant sans perdre votre authenticité",
     description:
-      "L'IA devient votre assistant, pas votre remplaçant. Vous apprenez à structurer, écrire et publier des posts qui vous ressemblent — avec un feedback quotidien.",
+      "L'IA devient votre assistant, pas votre remplaçant. Vous apprenez à structurer, écrire et publier des posts qui vous ressemblent, avec un feedback quotidien.",
     icon: PenTool,
     highlights: [
       "20 posts écrits et corrigés",

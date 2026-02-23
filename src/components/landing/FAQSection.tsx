@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     q: "Est-ce que l'IA va écrire mes posts à ma place ?",
-    a: "Non, et c'est tout l'intérêt. L'IA est votre assistant, pas votre remplaçant. Vous apprenez à l'utiliser pour structurer et améliorer — mais votre voix, vos idées et votre authenticité restent au centre.",
+    a: "Non, et c'est tout l'intérêt. L'IA est votre assistant, pas votre remplaçant. Vous apprenez à l'utiliser pour structurer et améliorer, mais votre voix, vos idées et votre authenticité restent au centre.",
   },
   {
     q: "Pourquoi le prix est-il si bas ?",
@@ -28,11 +28,11 @@ const faqs = [
   },
   {
     q: "Que se passe-t-il après les 20 jours ?",
-    a: "Vous repartez avec un plan d'autonomie complet : tous les frameworks, templates et prompts sont à vous. Vous saurez exactement comment attirer des clients avec votre voix unique — sans dépendre de personne.",
+    a: "Vous repartez avec un plan d'autonomie complet : tous les frameworks, templates et prompts sont à vous. Vous saurez exactement comment attirer des clients avec votre voix unique, sans dépendre de personne.",
   },
   {
     q: "J'ai peur de me montrer vulnérable en ligne…",
-    a: "C'est normal, et c'est justement ce qu'on travaille ensemble. L'authenticité ne veut pas dire tout révéler — c'est trouver le juste équilibre entre votre vécu et votre expertise. Je vous accompagne pas à pas.",
+    a: "C'est normal, et c'est justement ce qu'on travaille ensemble. L'authenticité ne veut pas dire tout révéler, c'est trouver le juste équilibre entre votre vécu et votre expertise. Je vous accompagne pas à pas.",
   },
 ];
 
