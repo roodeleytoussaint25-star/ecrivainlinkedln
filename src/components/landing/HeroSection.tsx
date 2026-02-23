@@ -167,11 +167,11 @@ const HeroSection = () => {
 
         {/* Title */}
         <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.1] animate-fade-in-delay-1">
-          <span className="text-white/90 italic">Vous utilisez l'IA.</span>{" "}
-          <span className="text-white/90">Personne ne réagit.</span>
+          Écrivez et publiez{" "}
+          <span className="text-gold italic">20 posts LinkedIn</span>{" "}
+          qui attirent vos premiers clients
           <br />
-          En <span className="text-gold italic">20 jours</span>, trouvez votre voix et attirez vos{" "}
-          <span className="text-gold italic">premiers clients.</span>
+          — en <span className="text-gold italic">20 jours</span>
         </h1>
 
         {/* Images row — full width */}
@@ -181,7 +181,10 @@ const HeroSection = () => {
 
         {/* Subtitle */}
         <p className="text-lg sm:text-xl text-white/80 max-w-2xl animate-fade-in-delay-2 font-medium">
-          Vous avez les outils, les idées, l'envie — mais vos posts sonnent creux et personne ne vous contacte. Ce coaching 1:1 transforme vos idées et expériences en une voix unique qui attire une audience prête à agir.
+          Un coaching 1:1 où vous écrivez, publiez et corrigez un post par jour — avec un feedback personnalisé à chaque étape.
+        </p>
+        <p className="text-base sm:text-lg text-white/60 max-w-2xl animate-fade-in-delay-2">
+          Pas une formation passive. Vous repartez avec 20 posts publiés, un profil optimisé, une offre claire et un tunnel de vente opérationnel.
         </p>
 
         {/* CTAs */}
@@ -192,7 +195,7 @@ const HeroSection = () => {
             className="bg-gold text-navy-deep hover:bg-gold-hover font-display font-bold text-base px-8 py-6 rounded-full shadow-lg shadow-gold/20 transition-all hover:shadow-xl hover:shadow-gold/30 hover:scale-105"
           >
             <a href="#investissement">
-              Réservez votre place
+              Rejoindre le programme
               <ArrowRight className="w-5 h-5 ml-1" />
             </a>
           </Button>
