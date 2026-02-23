@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 const CTASection = () => {
   return (
     <>
-      <section className="bg-gradient-to-b from-navy to-navy-mid py-20 sm:py-28">
+      <section className="bg-gradient-to-b from-navy to-navy-mid paper-texture-dark py-20 sm:py-28">
         <div className="container mx-auto px-4 sm:px-6 max-w-3xl text-center observe-section">
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-6 leading-tight">
             Réservez votre accompagnement 20 jours et commencez à publier vos{" "}

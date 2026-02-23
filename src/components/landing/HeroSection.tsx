@@ -73,7 +73,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center bg-navy-deep overflow-hidden pt-20 pb-10">
+    <section className="relative min-h-screen flex flex-col items-center justify-center bg-navy-deep paper-texture-dark overflow-hidden pt-20 pb-10">
       {/* Particle canvas */}
       <canvas
         ref={canvasRef}
