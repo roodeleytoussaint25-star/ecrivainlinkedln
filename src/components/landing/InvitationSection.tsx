@@ -31,21 +31,21 @@ const SketchBrain = () => (
 const cards = [
   {
     icon: SketchX,
-    title: "Tu ne sais pas",
-    highlight: "quoi raconter",
-    text: "C'est normal de ne pas savoir par où commencer. Pourtant, ton quotidien regorge d'expériences intéressantes à documenter !",
+    title: "Trop de",
+    highlight: "possibilités",
+    text: "L'IA peut tout faire : posts, carrousels, stratégies… Résultat ? Vous êtes paralysé par les options et vous ne faites rien. Le paradoxe du choix vous bloque au stade 0.",
   },
   {
     icon: SketchForbidden,
-    title: "Tu ne te sens pas",
-    highlight: "légitime",
-    text: "Personne ne se sent 100% légitime. C'est un sentiment universel et tous les créateurs ont douté avant de démarrer. Rassure-toi, c'est normal !",
+    title: "Pas aligné avec",
+    highlight: "vous-même",
+    text: "Les posts générés par l'IA sonnent faux. Vous voulez publier quelque chose qui vous ressemble vraiment, pas un copier-coller générique que n'importe qui pourrait poster.",
   },
   {
     icon: SketchBrain,
-    title: "L'IA comme",
-    highlight: "assistant",
-    text: "Vous souhaitez utiliser l'IA pour vous mettre en valeur, pour transformer votre histoire en quelque chose de désirable, et ne pas au contraire la laisser détruire votre marque.",
+    title: "Bloqué au",
+    highlight: "stade 0",
+    text: "Vous savez que LinkedIn peut transformer votre carrière. Vous avez les outils, les idées, l'envie — mais vous n'avez toujours pas publié votre premier post.",
   },
 ];
 
@@ -56,8 +56,8 @@ const InvitationSection = () => {
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 max-w-5xl">
         <h2 className="font-display text-3xl sm:text-4xl font-bold text-white text-center mb-14 observe-section">
-          Ce qui te bloque{" "}
-          <span className="text-gold italic">aujourd'hui</span>
+          Ce qui vous empêche de{" "}
+          <span className="text-gold italic">passer à l'action</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -110,8 +110,8 @@ const InvitationSection = () => {
 
         <div className="observe-section mt-14 bg-gold/10 border border-gold/20 rounded-2xl p-6 sm:p-8 text-center max-w-2xl mx-auto">
           <p className="font-display text-lg sm:text-xl font-semibold text-gold">
-            Votre impact réel vient de l'écriture quotidienne, pas des
-            impressions ou likes superficiels.
+            Le vrai problème n'est pas l'IA — c'est de ne pas savoir comment
+            l'utiliser pour raconter <em>votre</em> histoire.
           </p>
         </div>
       </div>
