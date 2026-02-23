@@ -171,7 +171,7 @@ const HeroSection = () => {
           <span className="text-gold">20 posts LinkedIn</span>{" "}
           qui attirent vos premiers clients
           <br />
-          — en <span className="text-gold">20 jours</span>
+          en <span className="text-gold">20 jours</span>
         </h1>
 
         {/* Images row — full width */}
