@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { ArrowRight, Eye, Linkedin } from "lucide-react";
+import { ArrowRight, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import hero1 from "@/assets/hero/hero-1.png";
 import hero2 from "@/assets/hero/hero-2.png";
@@ -157,7 +157,11 @@ const HeroSection = () => {
       <div className="relative z-10 w-full max-w-6xl mx-auto flex flex-col items-center text-center gap-8 px-4">
         {/* Badge */}
         <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2 animate-fade-in">
-          <Linkedin className="w-4 h-4 text-gold" />
+          <svg viewBox="0 0 76 22" className="h-4 w-auto" aria-label="LinkedIn">
+            <text x="0" y="17" className="font-bold" style={{ fontSize: "18px", fill: "white", fontFamily: "system-ui, sans-serif" }}>Linked</text>
+            <rect x="52" y="2" width="22" height="18" rx="3" fill="hsl(var(--gold))" />
+            <text x="55" y="17" className="font-bold" style={{ fontSize: "18px", fill: "hsl(var(--navy-deep))", fontFamily: "system-ui, sans-serif" }}>in</text>
+          </svg>
           <span className="text-white/80 text-sm font-medium">Coaching 1:1 · 20 jours</span>
         </div>
 
