@@ -1,42 +1,41 @@
 
 
-# Rendre la promesse du Hero concrete et tangible
+# Deux changements : logo LinkedIn officiel + fond papier carnet
 
-Le probleme : "Trouvez votre voix" est abstrait. Le lecteur ne sait pas ce qu'il obtient concretement. Il faut une promesse mesurable, comme Ship 30 for 30 qui dit "Start Writing and Publishing Online".
+## 1. Logo LinkedIn dans le badge Hero
 
----
+Le logo actuel dans le badge utilise du texte blanc pour "Linked" et un fond dore pour le "in". L'image de reference montre le vrai logo LinkedIn : tout en bleu (`#0A66C2`), avec "in" dans un rectangle bleu arrondi et le texte "in" en blanc.
 
-## Nouveau titre
+**Fichier** : `src/components/landing/HeroSection.tsx` (lignes 160-163)
 
-> Ecrivez et publiez **20 posts LinkedIn** qui attirent vos premiers clients — en **20 jours**
+Changements sur le SVG du badge :
+- "Linked" : passe de `fill: white` a `fill: #0A66C2` (bleu LinkedIn officiel)
+- Le rectangle du "in" : passe de `fill: hsl(var(--gold))` a `fill: #0A66C2`
+- Le texte "in" : passe de `fill: hsl(var(--navy-deep))` a `fill: white`
 
-C'est concret : 20 posts, 20 jours, premiers clients. Le lecteur sait exactement ce qu'il va faire et obtenir.
-
----
-
-## Nouveaux paragraphes sous les images
-
-**Paragraphe 1 (ce que c'est)** :
-> Un coaching 1:1 ou vous ecrivez, publiez et corrigez un post par jour — avec un feedback personnalise a chaque etape.
-
-**Paragraphe 2 (differenciation)** :
-> Pas une formation passive. Vous repartez avec 20 posts publies, un profil optimise, une offre claire et un tunnel de vente operationnel.
+Cela reproduit fidelement le logo LinkedIn officiel visible dans l'image.
 
 ---
 
-## CTA
+## 2. Texture de fond "papier de carnet"
 
-- Primaire : **"Rejoindre le programme"** (plus engageant que "Reservez votre place")
-- Secondaire : "Voir le programme" (inchange)
+L'image de reference montre un fond blanc-gris avec une texture de papier visible, des fibres fines et un grain organique. Actuellement la texture `paper-texture-dark` est tres subtile (opacite 0.04).
+
+**Fichier** : `src/index.css` (lignes 104-110)
+
+Changements :
+- Augmenter l'opacite du bruit SVG de `0.04` a `0.08` pour `paper-texture-dark` et de `0.06` a `0.12` pour `paper-texture-light`
+- Reduire la `baseFrequency` pour obtenir un grain plus large et plus visible, comme du vrai papier (de `0.75` a `0.5` pour dark, de `0.65` a `0.45` pour light)
+- Ajouter un leger gradient radial blanc/transparent en overlay pour simuler l'eclairage naturel du papier
+
+Ces changements s'appliquent a toutes les sections qui utilisent deja `paper-texture-dark` et `paper-texture-light`, donc la coherence est preservee sur toute la page.
 
 ---
 
-## Fichier modifie
+## Fichiers modifies
 
-`src/components/landing/HeroSection.tsx` — lignes 169-185 et 194-196
-
-- Titre h1 : remplace par la nouvelle promesse concrete
-- Sous-titre : remplace par les 2 paragraphes courts
-- CTA primaire : "Rejoindre le programme"
-- Tout le reste (badge, images, design, animations) reste identique
+| Fichier | Modification |
+|---|---|
+| `src/components/landing/HeroSection.tsx` | SVG du logo LinkedIn : couleurs officielles bleu/blanc |
+| `src/index.css` | Textures paper-texture-dark et paper-texture-light : grain plus visible et plus organique |
 
