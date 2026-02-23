@@ -25,7 +25,7 @@ const logisticsCards = [
 
 const LogisticsSection = () => {
   return (
-    <section className="bg-grey-light py-20 sm:py-28">
+    <section className="bg-grey-light paper-texture-light py-20 sm:py-28">
       <div className="container mx-auto px-4 sm:px-6 max-w-5xl">
         <div className="text-center mb-14 observe-section">
           <span className="text-navy font-display text-sm font-semibold tracking-wider uppercase mb-4 block">

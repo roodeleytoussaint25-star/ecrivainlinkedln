@@ -51,7 +51,7 @@ const cards = [
 
 const InvitationSection = () => {
   return (
-    <section className="relative bg-navy py-20 sm:py-28 overflow-hidden">
+    <section className="relative bg-navy paper-texture-dark py-20 sm:py-28 overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,hsl(224_76%_40%/0.3),transparent_60%)]" />
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 max-w-5xl">

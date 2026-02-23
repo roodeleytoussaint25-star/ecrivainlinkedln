@@ -59,7 +59,7 @@ const phases = [
 
 const VehicleSection = () => {
   return (
-    <section className="bg-navy py-20 sm:py-28">
+    <section className="bg-navy paper-texture-dark py-20 sm:py-28">
       <div className="container mx-auto px-4 sm:px-6 max-w-4xl">
         <div className="text-center mb-14 observe-section max-w-2xl mx-auto">
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-white">

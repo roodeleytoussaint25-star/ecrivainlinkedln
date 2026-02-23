@@ -10,7 +10,7 @@ const activeDays = 14; // jours "faits" sur 20
 
 const ProofSection = () => {
   return (
-    <section className="bg-navy-mid py-20 sm:py-28">
+    <section className="bg-navy-mid paper-texture-dark py-20 sm:py-28">
       <div className="container mx-auto px-4 sm:px-6 max-w-5xl">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Texte gauche */}
