@@ -18,26 +18,21 @@ const heroImages = [
 const PARTICLE_COUNT = 40;
 
 const fanCards = [
-  { src: hero1, alt: "Post LinkedIn Sophie Bidaux", rotate: "-12deg", x: "-60px", y: "30px", z: 1 },
-  { src: hero2, alt: "Post LinkedIn Sophie Bidaux", rotate: "-6deg", x: "-30px", y: "15px", z: 2 },
-  { src: hero3, alt: "Post LinkedIn Sophie Bidaux", rotate: "0deg", x: "0px", y: "0px", z: 5 },
-  { src: hero4, alt: "Post LinkedIn Hugo Marquet", rotate: "6deg", x: "30px", y: "15px", z: 4 },
-  { src: hero5, alt: "Post LinkedIn Hugo Marquet", rotate: "12deg", x: "60px", y: "30px", z: 3 },
+  { src: hero1, alt: "Post LinkedIn Sophie Bidaux", rotate: "-10deg", size: "w-[100px] sm:w-[150px] md:w-[180px]" },
+  { src: hero2, alt: "Post LinkedIn Sophie Bidaux", rotate: "-4deg", size: "w-[110px] sm:w-[160px] md:w-[200px]" },
+  { src: hero3, alt: "Post LinkedIn Sophie Bidaux", rotate: "2deg", size: "w-[120px] sm:w-[170px] md:w-[210px]" },
+  { src: hero4, alt: "Post LinkedIn Hugo Marquet", rotate: "5deg", size: "w-[110px] sm:w-[155px] md:w-[190px]" },
+  { src: hero5, alt: "Post LinkedIn Hugo Marquet", rotate: "-3deg", size: "w-[105px] sm:w-[145px] md:w-[175px]" },
 ];
 
 const PostsFan = () => (
-  <div className="relative w-[300px] h-[300px] sm:w-[400px] sm:h-[380px] flex items-center justify-center">
+  <div className="flex items-end justify-center gap-3 sm:gap-4 md:gap-6 px-4 py-4">
     {fanCards.map((card, i) => (
       <div
         key={i}
-        className="absolute w-[120px] sm:w-[160px] rounded-xl bg-white p-1 shadow-xl shadow-black/30 transition-transform duration-300 hover:scale-110 hover:!z-10"
+        className={`${card.size} flex-shrink-0 rounded-xl bg-white p-1 shadow-xl shadow-black/30 transition-all duration-300 hover:scale-110 hover:!z-10 hover:-translate-y-2`}
         style={{
-          transform: `rotate(${card.rotate}) translateX(${card.x}) translateY(${card.y})`,
-          zIndex: card.z,
-          top: "50%",
-          left: "50%",
-          marginTop: "-100px",
-          marginLeft: "-60px",
+          transform: `rotate(${card.rotate})`,
         }}
       >
         <img
@@ -107,7 +102,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center bg-navy-deep paper-texture-dark overflow-hidden pt-20 pb-10">
+    <section className="relative min-h-screen flex flex-col items-center justify-center bg-navy-deep paper-texture-dark overflow-hidden pt-24 pb-12">
       {/* Particle canvas */}
       <canvas
         ref={canvasRef}
@@ -158,65 +153,60 @@ const HeroSection = () => {
         ))}
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 max-w-5xl">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-          {/* Left: Text */}
-          <div className="flex-1 text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2 mb-8 animate-fade-in">
-              <Linkedin className="w-4 h-4 text-gold" />
-              <span className="text-white/80 text-sm font-medium">Coaching 1:1 · 20 jours</span>
-            </div>
-
-            <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.1] mb-6 animate-fade-in-delay-1">
-              <span className="text-gold italic">20 Pas</span> sur{" "}
-              <span className="text-gold italic">20 Jours</span>
-            </h1>
-
-            <p className="text-lg sm:text-xl text-white/80 mb-4 max-w-xl animate-fade-in-delay-2 font-medium">
-              Vous avez mille possibilités avec l'IA, mais vous restez bloqué au stade 0 ?
-            </p>
-
-            <p className="text-base text-white/60 mb-10 max-w-xl animate-fade-in-delay-2">
-              En 20 jours, publiez votre premier post LinkedIn aligné avec qui vous êtes vraiment — pas ce que l'IA décide pour vous. Coaching 1:1, exercices quotidiens, feedback sur chaque post.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center animate-fade-in-delay-3">
-              <Button
-                asChild
-                size="lg"
-                className="bg-gold text-navy-deep hover:bg-gold-hover font-display font-bold text-base px-8 py-6 rounded-full shadow-lg shadow-gold/20 transition-all hover:shadow-xl hover:shadow-gold/30 hover:scale-105"
-              >
-                <a href="#investissement">
-                  Réservez votre place
-                  <ArrowRight className="w-5 h-5 ml-1" />
-                </a>
-              </Button>
-              <Button
-                asChild
-                size="lg"
-                variant="outline"
-                className="border-white/30 text-white hover:bg-white/10 font-display font-bold text-base px-8 py-6 rounded-full transition-all hover:border-white/50"
-              >
-                <a href="#vehicule">
-                  <Eye className="w-5 h-5 mr-1" />
-                  Voir le programme
-                </a>
-              </Button>
-            </div>
-          </div>
-
-          {/* Right: Posts Fan */}
-          <div className="flex-shrink-0 animate-fade-in-delay-2">
-            <PostsFan />
-          </div>
+      {/* Content — stacked vertically, centered */}
+      <div className="relative z-10 w-full max-w-6xl mx-auto flex flex-col items-center text-center gap-8 px-4">
+        {/* Badge */}
+        <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2 animate-fade-in">
+          <Linkedin className="w-4 h-4 text-gold" />
+          <span className="text-white/80 text-sm font-medium">Coaching 1:1 · 20 jours</span>
         </div>
-      </div>
 
-      {/* Author */}
-      <p className="relative z-10 mt-12 text-white/50 text-sm font-display tracking-wider uppercase animate-fade-in-delay-3">
-        par Toussaint Roodeley
-      </p>
+        {/* Title */}
+        <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.1] animate-fade-in-delay-1">
+          <span className="text-gold italic">20 Pas</span> sur{" "}
+          <span className="text-gold italic">20 Jours.</span>
+        </h1>
+
+        {/* Images row — full width */}
+        <div className="w-full animate-fade-in-delay-2">
+          <PostsFan />
+        </div>
+
+        {/* Subtitle */}
+        <p className="text-lg sm:text-xl text-white/80 max-w-2xl animate-fade-in-delay-2 font-medium">
+          En 20 jours, publiez votre premier post LinkedIn aligné avec qui vous êtes vraiment — pas ce que l'IA décide pour vous.
+        </p>
+
+        {/* CTAs */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-delay-3">
+          <Button
+            asChild
+            size="lg"
+            className="bg-gold text-navy-deep hover:bg-gold-hover font-display font-bold text-base px-8 py-6 rounded-full shadow-lg shadow-gold/20 transition-all hover:shadow-xl hover:shadow-gold/30 hover:scale-105"
+          >
+            <a href="#investissement">
+              Réservez votre place
+              <ArrowRight className="w-5 h-5 ml-1" />
+            </a>
+          </Button>
+          <Button
+            asChild
+            size="lg"
+            variant="outline"
+            className="border-white/30 text-white hover:bg-white/10 font-display font-bold text-base px-8 py-6 rounded-full transition-all hover:border-white/50"
+          >
+            <a href="#vehicule">
+              <Eye className="w-5 h-5 mr-1" />
+              Voir le programme
+            </a>
+          </Button>
+        </div>
+
+        {/* Author */}
+        <p className="text-white/50 text-sm font-display tracking-wider uppercase animate-fade-in-delay-3">
+          par Toussaint Roodeley
+        </p>
+      </div>
     </section>
   );
 };
