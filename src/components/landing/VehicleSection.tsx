@@ -68,7 +68,7 @@ const VehicleSection = () => {
           </div>
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-4">
             3 méthodes propriétaires pour{" "}
-            <span className="text-gold italic">retrouver votre voix et attirer vos clients</span>
+            <span className="text-gold">retrouver votre voix et attirer vos clients</span>
           </h2>
           <p className="text-white/60 text-base sm:text-lg leading-relaxed">
             Un coaching 1:1 structuré pour passer de zéro à une présence LinkedIn authentique qui génère des opportunités — en 20 jours.

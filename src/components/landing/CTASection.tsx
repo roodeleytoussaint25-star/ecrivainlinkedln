@@ -8,7 +8,7 @@ const CTASection = () => {
         <div className="container mx-auto px-4 sm:px-6 max-w-3xl text-center">
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-6 leading-tight">
             Trouvez votre voix. Attirez vos clients. En{" "}
-            <span className="text-gold italic">20 jours.</span>
+            <span className="text-gold">20 jours.</span>
           </h2>
 
           <p className="text-white/65 mb-10 max-w-lg mx-auto">

@@ -30,7 +30,7 @@ const ProofSection = () => {
                 Ce qui manque, ce n'est pas un meilleur outil — c'est l'alignement entre votre voix, votre mission et votre audience.
               </p>
               <blockquote className="border-l-2 border-gold pl-4 mt-2">
-                <p className="text-gold font-display font-semibold text-lg italic">
+                <p className="text-gold font-display font-semibold text-lg">
                   "L'objectif des premières années est d'apprendre, pas de gagner."
                 </p>
               </blockquote>

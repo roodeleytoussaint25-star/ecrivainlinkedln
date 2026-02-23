@@ -168,10 +168,10 @@ const HeroSection = () => {
         {/* Title */}
         <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.1] animate-fade-in-delay-1">
           Écrivez et publiez{" "}
-          <span className="text-gold italic">20 posts LinkedIn</span>{" "}
+          <span className="text-gold">20 posts LinkedIn</span>{" "}
           qui attirent vos premiers clients
           <br />
-          — en <span className="text-gold italic">20 jours</span>
+          — en <span className="text-gold">20 jours</span>
         </h1>
 
         {/* Images row — full width */}
