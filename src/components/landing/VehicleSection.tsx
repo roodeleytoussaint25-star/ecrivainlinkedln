@@ -4,42 +4,42 @@ const methods = [
   {
     num: "01",
     name: "La Méthode Fondation™",
-    tagline: "Trouver la bonne stratégie et poser les bases",
+    tagline: "Clarifier qui vous êtes et à qui vous parlez",
     description:
-      "Avant d'écrire un seul mot, on construit votre socle : niche, histoire personnelle, profil optimisé et offre prête à vendre. Tout est aligné avec qui vous êtes vraiment.",
+      "Avant d'écrire, on clarifie votre voix, votre niche et votre offre. Fini la confusion : vous saurez exactement quoi dire, à qui, et pourquoi.",
     icon: Target,
     highlights: [
-      "Votre niche creusée en profondeur",
+      "Niche creusée en profondeur",
+      "Voix unique définie",
       "Profil LinkedIn qui convertit",
-      "Offre personnalisée structurée",
-      "Landing page opérationnelle",
+      "Offre alignée avec votre expertise",
     ],
   },
   {
     num: "02",
     name: "La Méthode Écriture™",
-    tagline: "Créer et publier du contenu qui attire vos clients",
+    tagline: "Créer du contenu engageant sans perdre votre authenticité",
     description:
-      "On passe à l'action : écriture quotidienne, accroches magnétiques, carrousels engageants. Chaque post est relu, corrigé et optimisé avec vous.",
+      "L'IA devient votre assistant, pas votre remplaçant. Vous apprenez à structurer, écrire et publier des posts qui vous ressemblent — avec un feedback quotidien.",
     icon: PenTool,
     highlights: [
       "20 posts écrits et corrigés",
-      "14 types d'accroches maîtrisés",
-      "Carrousels et visuels pro",
-      "Feedback quotidien personnalisé",
+      "L'IA au service de votre voix",
+      "Accroches qui captent l'attention",
+      "Feedback personnalisé chaque jour",
     ],
   },
   {
     num: "03",
     name: "La Méthode Croissance™",
-    tagline: "Monétiser votre audience et scaler votre activité",
+    tagline: "Transformer votre audience en clients",
     description:
-      "Vos posts attirent des prospects ? On transforme ça en revenus : prospection, tunnel de vente, newsletter et appels de closing.",
+      "Vos posts attirent les bonnes personnes ? On transforme l'attention en conversations et en ventes : prospection, tunnel de vente, landing page.",
     icon: TrendingUp,
     highlights: [
       "Prospection stratégique",
-      "Tunnel de vente en autopilote",
-      "Newsletter qui fidélise",
+      "Landing page opérationnelle",
+      "Messages de vente authentiques",
       "Plan d'autonomie post-20 jours",
     ],
   },
@@ -68,10 +68,10 @@ const VehicleSection = () => {
           </div>
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-4">
             3 méthodes propriétaires pour{" "}
-            <span className="text-gold italic">transformer votre LinkedIn</span>
+            <span className="text-gold italic">retrouver votre voix et attirer vos clients</span>
           </h2>
           <p className="text-white/60 text-base sm:text-lg leading-relaxed">
-            Le coaching 1:1 est structuré autour de 3 méthodes que j'ai développées. Chaque jour, vous recevez des exercices concrets avec un feedback personnalisé.
+            Un coaching 1:1 structuré pour passer de zéro à une présence LinkedIn authentique qui génère des opportunités — en 20 jours.
           </p>
         </div>
 
