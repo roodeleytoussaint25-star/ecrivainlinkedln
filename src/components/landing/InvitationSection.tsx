@@ -31,21 +31,21 @@ const SketchBrain = () => (
 const cards = [
   {
     icon: SketchX,
-    title: "Votre contenu",
-    highlight: "sonne faux",
-    text: "L'IA écrit vite, mais pas comme vous. Résultat : des posts génériques que n'importe qui pourrait publier. Votre audience le sent et scroll sans réagir. Vous perdez votre voix à chaque prompt.",
+    title: "Ton profil ne parle pas",
+    highlight: "à la bonne cible",
+    text: "Titre confus, résumé générique, aucun message clair. Les bonnes personnes arrivent sur ton profil et ne comprennent pas ce que tu fais. Elles partent.",
   },
   {
     icon: SketchForbidden,
-    title: "Vous publiez dans",
-    highlight: "le vide",
-    text: "Vous postez, vous attendez... rien. Pas de likes, pas de commentaires, pas de messages. Le doute s'installe : \"Pourquoi personne ne réagit ?\" La fatigue mentale remplace l'enthousiasme.",
+    title: "Tu publies mais",
+    highlight: "personne ne réagit",
+    text: "Tu postes de temps en temps. Sans calendrier, sans niche définie, sans système. L'algorithme t'ignore. Ton audience aussi.",
   },
   {
     icon: SketchBrain,
-    title: "Vous n'arrivez pas à",
-    highlight: "vendre",
-    text: "Vous savez que LinkedIn peut transformer votre activité. Mais entre publier et trouver des clients, il y a un gouffre. Vous accumulez les formations sans agir, vous copiez d'autres créateurs, toujours au stade zéro.",
+    title: "Tu n'as pas le temps",
+    highlight: "de créer du contenu",
+    text: "Entre tes clients et tes projets, créer des posts de qualité chaque semaine est la dernière de tes priorités. Tu publies quand tu peux, ce que tu peux.",
   },
 ];
 
@@ -56,8 +56,8 @@ const InvitationSection = () => {
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 max-w-5xl">
         <h2 className="font-display text-3xl sm:text-4xl font-bold text-white text-center mb-14 observe-section">
-          Pourquoi vos posts ne génèrent{" "}
-          <span className="text-gold">ni engagement, ni clients</span>
+          Pourquoi ton LinkedIn ne génère{" "}
+          <span className="text-gold">aucune traction</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -110,8 +110,7 @@ const InvitationSection = () => {
 
         <div className="observe-section mt-14 bg-gold/10 border border-gold/20 rounded-2xl p-6 sm:p-8 text-center max-w-2xl mx-auto">
           <p className="font-display text-lg sm:text-xl font-semibold text-gold">
-             Le vrai problème n'est pas l'IA, c'est de ne pas savoir transformer
-             vos idées et votre vécu en messages qui attirent <em>les bons clients</em>.
+             Le vrai problème : tu n'as pas de système. Pas de positionnement clair. Pas de contenu prêt. <em>Sprint Visibilité</em> règle les 3 en 30 jours.
           </p>
         </div>
       </div>
