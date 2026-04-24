@@ -1,82 +1,68 @@
-import { Linkedin, Target, PenTool, TrendingUp, Gift, Check } from "lucide-react";
+import { Linkedin, Target, User, FileText, Zap, Check } from "lucide-react";
 
 const methods = [
   {
     num: "01",
-    name: "La Méthode Fondation™",
-    tagline: "Clarifier qui vous êtes et à qui vous parlez",
+    name: "Positionnement™",
+    tagline: "Définir exactement qui tu es et à qui tu parles",
     description:
-      "Avant d'écrire, on clarifie votre voix, votre niche et votre offre. Fini la confusion : vous saurez exactement quoi dire, à qui, et pourquoi.",
+      "Tu remplis un questionnaire. Je définis ta niche, j'analyse ton profil existant, je pose les fondations.",
     icon: Target,
     highlights: [
-      "Niche creusée en profondeur",
-      "Voix unique définie",
-      "Profil LinkedIn qui convertit",
-      "Offre alignée avec votre expertise",
+      "Niche définie",
+      "Voix identifiée",
+      "Cible précisée",
+      "Angle de contenu posé",
     ],
   },
   {
     num: "02",
-    name: "La Méthode Écriture™",
-    tagline: "Créer du contenu engageant sans perdre votre authenticité",
+    name: "Profil™",
+    tagline: "Un profil LinkedIn qui parle pour toi",
     description:
-      "L'IA devient votre assistant, pas votre remplaçant. Vous apprenez à structurer, écrire et publier des posts qui vous ressemblent, avec un feedback quotidien.",
-    icon: PenTool,
+      "Tu reçois 3 versions de texte pour chaque section de ton profil. Tu choisis la meilleure. Je déploie.",
+    icon: User,
     highlights: [
-      "20 posts écrits et corrigés",
-      "L'IA au service de votre voix",
-      "Accroches qui captent l'attention",
-      "Feedback personnalisé chaque jour",
+      "Titre optimisé",
+      "Résumé réécrit",
+      "3 versions au choix",
+      "Profil convertisseur",
     ],
   },
   {
     num: "03",
-    name: "La Méthode Croissance™",
-    tagline: "Transformer votre audience en clients",
+    name: "Contenu™",
+    tagline: "16 posts complets avec visuels, prêts à copier-coller",
     description:
-      "Vos posts attirent les bonnes personnes ? On transforme l'attention en conversations et en ventes : prospection, tunnel de vente, landing page.",
-    icon: TrendingUp,
+      "Je crée tes 16 posts (4 par semaine) depuis ta niche et ton vécu. Visuels inclus. Prêts à publier sur 4 semaines.",
+    icon: FileText,
     highlights: [
-      "Prospection stratégique",
-      "Landing page opérationnelle",
-      "Messages de vente authentiques",
-      "Plan d'autonomie post-20 jours",
+      "16 posts rédigés",
+      "Visuels créés",
+      "Prêts à publier",
+      "Calendrier inclus",
     ],
   },
-];
-
-const bonuses = [
-  "50+ prompts IA personnalisés pour l'écriture",
-  "Templates d'accroches et fins de posts",
-  "Framework de copywriting avancé",
-  "Guide de commentaires stratégiques",
-  "Checklist d'optimisation de profil",
-  "Modèles de messages de prospection",
-  "Template de lead magnet",
-  "Guide Lightroom + InCollage pour visuels",
 ];
 
 const VehicleSection = () => {
   return (
     <section id="vehicule" className="bg-navy paper-texture-dark py-20 sm:py-28">
       <div className="container mx-auto px-4 sm:px-6 max-w-5xl">
-        {/* Header */}
         <div className="text-center mb-16 observe-section max-w-2xl mx-auto">
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2 mb-6">
             <Linkedin className="w-4 h-4 text-gold" />
             <span className="text-white/70 text-sm font-medium">Le Programme</span>
           </div>
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-4">
-            3 méthodes propriétaires pour{" "}
-            <span className="text-gold">retrouver votre voix et attirer vos clients</span>
+            3 livrables. 1 système. <span className="text-gold">30 jours.</span>
           </h2>
           <p className="text-white/60 text-base sm:text-lg leading-relaxed">
-            Un coaching 1:1 structuré pour passer de zéro à une présence LinkedIn authentique qui génère des opportunités — en 20 jours.
+            Sprint Visibilité en 3 étapes, tout créé à ta place.
           </p>
         </div>
 
-        {/* Methods */}
-        <div className="space-y-8 mb-20">
+        <div className="space-y-8 mb-12">
           {methods.map((method, index) => (
             <div
               key={method.num}
@@ -94,7 +80,6 @@ const VehicleSection = () => {
                 }}
               >
                 <div className={`flex flex-col ${index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"} gap-6 md:gap-0`}>
-                  {/* Mockup placeholder */}
                   <div className="md:w-2/5 flex items-center justify-center p-6 sm:p-10">
                     <div className="w-full aspect-[4/3] rounded-2xl bg-gradient-to-br from-white/10 to-white/5 border border-white/10 flex flex-col items-center justify-center gap-3">
                       <method.icon className="w-12 h-12 text-gold/60" />
@@ -104,7 +89,6 @@ const VehicleSection = () => {
                     </div>
                   </div>
 
-                  {/* Content */}
                   <div className="md:w-3/5 p-6 pt-0 md:pt-6 sm:p-10 flex flex-col justify-center">
                     <span className="font-display text-5xl font-bold text-gold/20 mb-2">
                       {method.num}
@@ -133,32 +117,14 @@ const VehicleSection = () => {
           ))}
         </div>
 
-        {/* Bonuses */}
-        <div className="observe-section">
-          <div className="text-center mb-8">
-            <div className="inline-flex items-center gap-2 bg-gold/10 border border-gold/20 rounded-full px-4 py-2 mb-4">
-              <Gift className="w-4 h-4 text-gold" />
-              <span className="text-gold text-sm font-semibold">Bonus inclus</span>
-            </div>
-            <h3 className="font-display text-2xl sm:text-3xl font-bold text-white">
-              Les frameworks et ressources offerts
-            </h3>
-            <p className="text-white/50 text-sm mt-2">
-              En plus du coaching, vous repartez avec tout ça
-            </p>
+        <div className="observe-section max-w-3xl mx-auto bg-gold/5 border border-gold/20 rounded-2xl p-6 sm:p-8 text-center">
+          <div className="inline-flex items-center gap-2 mb-3">
+            <Zap className="w-5 h-5 text-gold" />
+            <span className="text-gold font-display font-semibold text-sm uppercase tracking-wider">Livraison express</span>
           </div>
-
-          <div className="grid sm:grid-cols-2 gap-3 max-w-3xl mx-auto">
-            {bonuses.map((bonus, i) => (
-              <div
-                key={i}
-                className="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-3 hover:border-gold/20 transition-colors"
-              >
-                <span className="text-gold text-sm">✦</span>
-                <span className="text-white/75 text-sm">{bonus}</span>
-              </div>
-            ))}
-          </div>
+          <p className="font-display text-lg sm:text-xl font-semibold text-white">
+            Livraison en moins d'une semaine. Tout en async, sans appel.
+          </p>
         </div>
       </div>
     </section>
