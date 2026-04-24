@@ -162,16 +162,15 @@ const HeroSection = () => {
             <rect x="52" y="2" width="22" height="18" rx="3" fill="hsl(var(--gold))" />
             <text x="55" y="17" className="font-bold" style={{ fontSize: "18px", fill: "hsl(var(--navy-deep))", fontFamily: "system-ui, sans-serif" }}>in</text>
           </svg>
-          <span className="text-white/80 text-sm font-medium">Coaching 1:1 · 20 jours</span>
+          <span className="text-white/80 text-sm font-medium">LinkedIn Done-For-You · 30 jours</span>
         </div>
 
         {/* Title */}
         <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.1] animate-fade-in-delay-1">
-          Écrivez et publiez{" "}
-          <span className="text-gold">20 posts LinkedIn</span>{" "}
-          qui attirent vos premiers clients
-          <br />
-          en <span className="text-gold">20 jours</span>
+          Ton profil optimisé et{" "}
+          <span className="text-gold">16 posts</span>{" "}
+          prêts à publier en{" "}
+          <span className="text-gold">30 jours</span>
         </h1>
 
         {/* Images row — full width */}
@@ -181,10 +180,10 @@ const HeroSection = () => {
 
         {/* Subtitle */}
         <p className="text-lg sm:text-xl text-white/80 max-w-2xl animate-fade-in-delay-2 font-medium">
-          Un coaching 1:1 où vous écrivez, publiez et corrigez un post par jour, avec un feedback personnalisé à chaque étape.
+          Un système clé-en-main où je crée tout à ta place. Positionnement, profil, posts et visuels. Toi, tu valides et tu publies.
         </p>
         <p className="text-base sm:text-lg text-white/60 max-w-2xl animate-fade-in-delay-2">
-          Pas une formation passive. Vous repartez avec 20 posts publiés, un profil optimisé, une offre claire et un tunnel de vente opérationnel.
+          Pas de coaching. Pas d'appels. Tu reçois les livrables, tu choisis, tu postes.
         </p>
 
         {/* CTAs */}
@@ -195,7 +194,7 @@ const HeroSection = () => {
             className="bg-gold text-navy-deep hover:bg-gold-hover font-display font-bold text-base px-8 py-6 rounded-full shadow-lg shadow-gold/20 transition-all hover:shadow-xl hover:shadow-gold/30 hover:scale-105"
           >
             <a href="#investissement">
-              Rejoindre le programme
+              Obtenir ma place
               <ArrowRight className="w-5 h-5 ml-1" />
             </a>
           </Button>

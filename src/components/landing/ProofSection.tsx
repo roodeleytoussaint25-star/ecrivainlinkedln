@@ -1,12 +1,12 @@
 const progressBars = [
-  { label: "Sem 1", height: 40, posts: 3 },
-  { label: "Sem 2", height: 65, posts: 5 },
-  { label: "Sem 3", height: 85, posts: 7, active: true },
-  { label: "Sem 4", height: 70, posts: 5 },
-  { label: "Final", height: 30, posts: 1 },
+  { label: "Sem 1", height: 40, posts: 4 },
+  { label: "Sem 2", height: 65, posts: 4 },
+  { label: "Sem 3", height: 85, posts: 4, active: true },
+  { label: "Sem 4", height: 70, posts: 4 },
+  { label: "Final", height: 30, posts: 0 },
 ];
 
-const activeDays = 14; // jours "faits" sur 20
+const activeDays = 14; // jours livrés sur 30
 
 const ProofSection = () => {
   return (
@@ -16,22 +16,22 @@ const ProofSection = () => {
           {/* Texte gauche */}
           <div className="observe-section">
             <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-6 leading-tight">
-              On complique toujours la{" "}
-              <span className="text-gold">création de contenu</span>
+              Le système qui a produit{" "}
+              <span className="text-gold">400 000 impressions</span> en 14 jours
             </h2>
             <div className="space-y-4 text-white/70 leading-relaxed">
               <p>
-                Le contenu a un seul rôle : montrer qui vous êtes pour que les bonnes personnes aient envie de travailler avec vous.
+                Un menuisier. Artisanat français, bois récupéré. Il publiait une fois par semaine. Profil confus. Niche invisible.
               </p>
               <p>
-                Le problème ? La plupart des créateurs laissent l'IA décider de leur message. Résultat : du contenu sans émotion, sans point de vue, sans différenciation. L'audience ne vous reconnaît plus.
+                En 14 jours avec le Système LWAI : 400 000 impressions, des prospects qui le contactaient directement.
               </p>
               <p>
-                Ce qui manque, ce n'est pas un meilleur outil, c'est l'alignement entre votre voix, votre mission et votre audience.
+                Un coach récemment diplômé : 184 000 impressions en 1 mois et des prises de contact avec des leaders de son secteur.
               </p>
               <blockquote className="border-l-2 border-gold pl-4 mt-2">
                 <p className="text-gold font-display font-semibold text-lg">
-                  "L'objectif des premières années est d'apprendre, pas de gagner."
+                  "Ce n'est pas du talent. C'est un système."
                 </p>
               </blockquote>
             </div>
@@ -39,9 +39,9 @@ const ProofSection = () => {
             {/* Mini stats */}
             <div className="flex flex-wrap gap-3 mt-8">
               {[
-                { value: "20", label: "jours" },
-                { value: "20+", label: "posts" },
-                { value: "5", label: "bêta-testeurs" },
+                { value: "400K", label: "impressions" },
+                { value: "14", label: "jours" },
+                { value: "2", label: "clients testés" },
               ].map((s, i) => (
                 <div
                   key={i}
@@ -59,8 +59,8 @@ const ProofSection = () => {
             {/* Widget 1 : Barres de progression */}
             <div className="bg-white/8 backdrop-blur-sm border border-white/15 rounded-2xl p-6 hover:border-gold/20 transition-colors">
               <div className="mb-5">
-                <h3 className="text-white font-display font-semibold text-base">Votre progression</h3>
-                <p className="text-white/50 text-xs mt-0.5">20 jours d'actions concrètes</p>
+                <h3 className="text-white font-display font-semibold text-base">Ta progression</h3>
+                <p className="text-white/50 text-xs mt-0.5">16 posts livrés sur 30 jours</p>
               </div>
               <div className="flex items-end justify-between gap-3 h-36">
                 {progressBars.map((bar, i) => (
@@ -93,8 +93,8 @@ const ProofSection = () => {
             {/* Widget 2 : Calendrier dots */}
             <div className="bg-white/8 backdrop-blur-sm border border-white/15 rounded-2xl p-6 hover:border-gold/20 transition-colors">
               <div className="mb-5">
-                <h3 className="text-white font-display font-semibold text-base">Calendrier d'action</h3>
-                <p className="text-white/50 text-xs mt-0.5">20 posts en 20 jours</p>
+                <h3 className="text-white font-display font-semibold text-base">Calendrier de livraison</h3>
+                <p className="text-white/50 text-xs mt-0.5">Tout livré en moins de 30 jours</p>
               </div>
               <div className="grid grid-cols-5 gap-3 justify-items-center">
                 {Array.from({ length: 20 }, (_, i) => {
