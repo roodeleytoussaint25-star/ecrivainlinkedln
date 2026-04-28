@@ -16,22 +16,22 @@ const ProofSection = () => {
           {/* Texte gauche */}
           <div className="observe-section">
             <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-6 leading-tight">
-              Le système qui a produit{" "}
-              <span className="text-gold">400 000 impressions</span> en 14 jours
+              <span className="text-gold">400 000 impressions</span> en 14 jours pour un coach diplômé.{" "}
+              <span className="text-gold">184 000 impressions</span> en 1 mois pour un menuisier artisan.
             </h2>
             <div className="space-y-4 text-white/70 leading-relaxed">
               <p>
                 Un menuisier. Artisanat français, bois récupéré. Il publiait une fois par semaine. Profil confus. Niche invisible.
               </p>
               <p>
-                En 14 jours avec le Système LWAI : 400 000 impressions, des prospects qui le contactaient directement.
+                En 1 mois avec le Système LWAI : 184 000 impressions, des prospects qui le contactaient directement.
               </p>
               <p>
-                Un coach récemment diplômé : 184 000 impressions en 1 mois et des prises de contact avec des leaders de son secteur.
+                Un coach récemment diplômé : 400 000 impressions en 14 jours et des prises de contact avec des leaders de son secteur.
               </p>
               <blockquote className="border-l-2 border-gold pl-4 mt-2">
                 <p className="text-gold font-display font-semibold text-lg">
-                  "Ce n'est pas du talent. C'est un système."
+                  "Un menuisier. Un coach. La méthode est identique pour les deux."
                 </p>
               </blockquote>
             </div>
@@ -39,8 +39,8 @@ const ProofSection = () => {
             {/* Mini stats */}
             <div className="flex flex-wrap gap-3 mt-8">
               {[
-                { value: "400K", label: "impressions" },
-                { value: "14", label: "jours" },
+                { value: "184K–400K", label: "impressions" },
+                { value: "14j–1 mois", label: "délai" },
                 { value: "2", label: "clients testés" },
               ].map((s, i) => (
                 <div
