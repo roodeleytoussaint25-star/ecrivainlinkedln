@@ -14,7 +14,7 @@ const AboutSection = () => {
             <span className="text-gold font-display text-sm font-semibold tracking-wider uppercase mb-3 block">Qui suis-je ?</span>
             <h2 className="font-display text-2xl sm:text-3xl font-bold text-white mb-4">Toussaint Roodeley</h2>
             <div className="space-y-3 text-white/65 text-sm leading-relaxed">
-              <p>J'ai accompagné un menuisier à 400 000 impressions en 14 jours. Un coach diplômé à 184 000 en un mois. Les deux partaient de zéro.</p>
+              <p>J'ai accompagné un menuisier artisan à 184 000 impressions en 1 mois. Un coach récemment diplômé à 400 000 impressions en 14 jours. Les deux partaient de zéro.</p>
               <p>J'ai construit le Système LWAI après des mois d'expérimentation : Positionnement, Profil, Contenu. Tout en async, sans appels, sans temps perdu.</p>
               <p>Aujourd'hui, j'ouvre 3 places pour Sprint Visibilité. Tu reçois mon système déployé pour toi en 30 jours.</p>
             </div>
