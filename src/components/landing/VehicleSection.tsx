@@ -1,4 +1,7 @@
 import { Linkedin, Target, User, FileText, Zap, Check } from "lucide-react";
+import mockupPositionnement from "@/assets/mockup-positionnement.png";
+import mockupProfil from "@/assets/mockup-profil.png";
+import mockupContenu from "@/assets/mockup-contenu.png";
 
 const methods = [
   {
@@ -8,6 +11,8 @@ const methods = [
     description:
       "Tu remplis un questionnaire. Je définis ta niche, j'analyse ton profil existant, je pose les fondations.",
     icon: Target,
+    image: mockupPositionnement,
+    imageAlt: "Mockup livrable Positionnement",
     highlights: [
       "Niche définie",
       "Voix identifiée",
@@ -22,6 +27,8 @@ const methods = [
     description:
       "Tu reçois 3 versions de texte pour chaque section de ton profil. Tu choisis la meilleure. Je déploie.",
     icon: User,
+    image: mockupProfil,
+    imageAlt: "Mockup livrable Profil LinkedIn",
     highlights: [
       "Titre optimisé",
       "Résumé réécrit",
@@ -36,6 +43,8 @@ const methods = [
     description:
       "Je crée tes 16 posts (4 par semaine) depuis ta niche et ton vécu. Visuels inclus. Prêts à publier sur 4 semaines.",
     icon: FileText,
+    image: mockupContenu,
+    imageAlt: "Mockup livrable Contenu et Posts",
     highlights: [
       "16 posts rédigés",
       "Visuels créés",
@@ -81,11 +90,13 @@ const VehicleSection = () => {
               >
                 <div className={`flex flex-col ${index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"} gap-6 md:gap-0`}>
                   <div className="md:w-2/5 flex items-center justify-center p-6 sm:p-10">
-                    <div className="w-full aspect-[4/3] rounded-2xl bg-gradient-to-br from-white/10 to-white/5 border border-white/10 flex flex-col items-center justify-center gap-3">
-                      <method.icon className="w-12 h-12 text-gold/60" />
-                      <span className="text-white/40 text-xs font-medium uppercase tracking-wider">
-                        Mockup à venir
-                      </span>
+                    <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden flex items-center justify-center">
+                      <img
+                        src={method.image}
+                        alt={method.imageAlt}
+                        className="w-full h-full object-contain"
+                        loading="lazy"
+                      />
                     </div>
                   </div>
 
