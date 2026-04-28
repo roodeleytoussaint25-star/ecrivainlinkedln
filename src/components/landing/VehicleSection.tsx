@@ -133,9 +133,17 @@ const VehicleSection = () => {
             <Zap className="w-5 h-5 text-gold" />
             <span className="text-gold font-display font-semibold text-sm uppercase tracking-wider">Livraison express</span>
           </div>
-          <p className="font-display text-lg sm:text-xl font-semibold text-white">
+          <p className="font-display text-lg sm:text-xl font-semibold text-white mb-6">
             Livraison en moins d'une semaine. Tout en async, sans appel.
           </p>
+          <a
+            href="https://heyqo.cash/payment-link/share/XbJlDQ8NrKr8tf5UDS9HWkFoTaaikZadvMy2eMdhEhAp9kBjS2syxpldJqSw"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-gold text-navy-deep hover:bg-gold-hover font-display font-bold text-sm sm:text-base px-8 py-3 rounded-full shadow-lg shadow-gold/20 transition-all hover:shadow-xl hover:shadow-gold/30 hover:scale-105"
+          >
+            Obtenir ma place
+          </a>
         </div>
       </div>
     </section>
