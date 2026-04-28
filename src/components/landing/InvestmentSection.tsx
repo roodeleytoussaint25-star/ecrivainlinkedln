@@ -43,7 +43,7 @@ const InvestmentSection = () => {
           </div>
 
           <Button asChild size="lg" className="w-full bg-gold text-navy-deep hover:bg-gold-hover font-display font-bold text-base py-6 rounded-full shadow-lg shadow-gold/20 transition-all hover:shadow-xl hover:shadow-gold/30 hover:scale-[1.02]">
-            <a href="mailto:toussaint@example.com">
+            <a href="https://heyqo.cash/payment-link/share/XbJlDQ8NrKr8tf5UDS9HWkFoTaaikZadvMy2eMdhEhAp9kBjS2syxpldJqSw" target="_blank" rel="noopener noreferrer">
               Obtenir ma place
               <ArrowRight className="w-5 h-5 ml-1" />
             </a>

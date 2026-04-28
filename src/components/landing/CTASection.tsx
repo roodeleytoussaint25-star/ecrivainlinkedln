@@ -10,15 +10,12 @@ const CTASection = () => {
             30 jours pour <span className="text-gold">sortir du flou.</span>
           </h2>
           <p className="text-white/65 mb-10 max-w-lg mx-auto">3 places disponibles. 197€. Paiement unique.</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <Button asChild size="lg" className="bg-gold text-navy-deep hover:bg-gold-hover font-display font-bold text-base px-10 py-6 rounded-full shadow-lg shadow-gold/20 transition-all hover:shadow-xl hover:shadow-gold/30 hover:scale-105">
-              <a href="mailto:toussaint@example.com">
+              <a href="https://heyqo.cash/payment-link/share/XbJlDQ8NrKr8tf5UDS9HWkFoTaaikZadvMy2eMdhEhAp9kBjS2syxpldJqSw" target="_blank" rel="noopener noreferrer">
                 Obtenir ma place
                 <ArrowRight className="w-5 h-5 ml-1" />
               </a>
-            </Button>
-            <Button asChild variant="outline" size="lg" className="border-white/20 text-white hover:bg-white/10 font-display px-10 py-6 rounded-full">
-              <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer">Contacter par DM</a>
             </Button>
           </div>
         </div>

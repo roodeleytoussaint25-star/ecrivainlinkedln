@@ -1,4 +1,5 @@
 import { Linkedin } from "lucide-react";
+import profileToussaint from "@/assets/profile-toussaint.png";
 
 const AboutSection = () => {
   return (
@@ -6,8 +7,13 @@ const AboutSection = () => {
       <div className="container mx-auto px-4 sm:px-6 max-w-4xl">
         <div className="observe-section flex flex-col md:flex-row items-center gap-10 md:gap-14">
           <div className="shrink-0">
-            <div className="w-36 h-36 sm:w-48 sm:h-48 md:w-56 md:h-56 rounded-3xl bg-gradient-to-br from-gold/20 to-white/5 border border-white/15 flex items-center justify-center overflow-hidden">
-              <span className="text-white/30 text-xs font-medium uppercase tracking-wider text-center px-4">Photo à venir</span>
+            <div className="w-36 h-36 sm:w-48 sm:h-48 md:w-56 md:h-56 rounded-full border border-white/15 flex items-center justify-center overflow-hidden">
+              <img
+                src={profileToussaint}
+                alt="Toussaint Roodeley"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
             </div>
           </div>
           <div className="text-center md:text-left">

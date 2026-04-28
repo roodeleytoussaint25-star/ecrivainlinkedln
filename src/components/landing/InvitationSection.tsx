@@ -109,9 +109,17 @@ const InvitationSection = () => {
         </div>
 
         <div className="observe-section mt-14 bg-gold/10 border border-gold/20 rounded-2xl p-6 sm:p-8 text-center max-w-2xl mx-auto">
-          <p className="font-display text-lg sm:text-xl font-semibold text-gold">
+          <p className="font-display text-lg sm:text-xl font-semibold text-gold mb-6">
              Le vrai problème : tu n'as pas de système. Pas de positionnement clair. Pas de contenu prêt. <em>Sprint Visibilité</em> règle les 3 en 30 jours.
           </p>
+          <a
+            href="https://heyqo.cash/payment-link/share/XbJlDQ8NrKr8tf5UDS9HWkFoTaaikZadvMy2eMdhEhAp9kBjS2syxpldJqSw"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-gold text-navy-deep hover:bg-gold-hover font-display font-bold text-sm sm:text-base px-8 py-3 rounded-full shadow-lg shadow-gold/20 transition-all hover:shadow-xl hover:shadow-gold/30 hover:scale-105"
+          >
+            Réserver ma place
+          </a>
         </div>
       </div>
     </section>

@@ -35,6 +35,16 @@ const TimelineSection = () => {
             ))}
           </div>
         </div>
+        <div className="observe-section mt-12 text-center">
+          <a
+            href="https://heyqo.cash/payment-link/share/XbJlDQ8NrKr8tf5UDS9HWkFoTaaikZadvMy2eMdhEhAp9kBjS2syxpldJqSw"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-navy text-gold hover:bg-navy-mid font-display font-bold text-sm sm:text-base px-8 py-3 rounded-full shadow-lg shadow-navy/20 transition-all hover:shadow-xl hover:scale-105"
+          >
+            Démarrer mon Sprint
+          </a>
+        </div>
       </div>
     </section>
   );
