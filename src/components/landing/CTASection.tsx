@@ -12,7 +12,7 @@ const CTASection = () => {
           <p className="text-white/65 mb-10 max-w-lg mx-auto">3 places disponibles. 197€. Paiement unique.</p>
           <div className="flex justify-center">
             <Button asChild size="lg" className="bg-gold text-navy-deep hover:bg-gold-hover font-display font-bold text-base px-10 py-6 rounded-full shadow-lg shadow-gold/20 transition-all hover:shadow-xl hover:shadow-gold/30 hover:scale-105">
-              <a href="https://wa.me/message/FE33Z6D3JW7OI1" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/message/FE33Z6D3JW7OI1?text=Bonjour%20Toussaint%2C%20je%20souhaite%20r%C3%A9server%20ma%20place%20pour%20le%20Sprint%20Visibilit%C3%A9." target="_blank" rel="noopener noreferrer">
                 Obtenir ma place
                 <ArrowRight className="w-5 h-5 ml-1" />
               </a>
