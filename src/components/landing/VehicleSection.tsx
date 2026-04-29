@@ -89,18 +89,18 @@ const VehicleSection = () => {
                 }}
               >
                 <div className={`flex flex-col ${index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"} gap-6 md:gap-0`}>
-                  <div className="md:w-2/5 flex items-center justify-center p-6 sm:p-10">
-                    <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden flex items-center justify-center">
+                  <div className="md:w-1/2 flex items-center justify-center p-3 sm:p-5">
+                    <div className="w-full aspect-square rounded-2xl overflow-hidden flex items-center justify-center">
                       <img
                         src={method.image}
                         alt={method.imageAlt}
-                        className="w-full h-full object-contain"
+                        className="w-full h-full object-cover scale-110"
                         loading="lazy"
                       />
                     </div>
                   </div>
 
-                  <div className="md:w-3/5 p-6 pt-0 md:pt-6 sm:p-10 flex flex-col justify-center">
+                  <div className="md:w-1/2 p-6 pt-0 md:pt-6 sm:p-10 flex flex-col justify-center">
                     <span className="font-display text-5xl font-bold text-gold/20 mb-2">
                       {method.num}
                     </span>
@@ -137,7 +137,7 @@ const VehicleSection = () => {
             Livraison en moins d'une semaine. Tout en async, sans appel.
           </p>
           <a
-            href="https://heyqo.cash/payment-link/share/XbJlDQ8NrKr8tf5UDS9HWkFoTaaikZadvMy2eMdhEhAp9kBjS2syxpldJqSw"
+            href="https://wa.me/message/FE33Z6D3JW7OI1"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-gold text-navy-deep hover:bg-gold-hover font-display font-bold text-sm sm:text-base px-8 py-3 rounded-full shadow-lg shadow-gold/20 transition-all hover:shadow-xl hover:shadow-gold/30 hover:scale-105"
