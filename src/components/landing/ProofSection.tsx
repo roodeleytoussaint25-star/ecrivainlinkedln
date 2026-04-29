@@ -1,12 +1,13 @@
 const progressBars = [
-  { label: "Sem 1", height: 40, posts: 4 },
-  { label: "Sem 2", height: 65, posts: 4 },
-  { label: "Sem 3", height: 85, posts: 4, active: true },
-  { label: "Sem 4", height: 70, posts: 4 },
-  { label: "Final", height: 30, posts: 0 },
+  { label: "Sem 1", height: 50, posts: 4 },
+  { label: "Sem 2", height: 50, posts: 4 },
+  { label: "Sem 3", height: 50, posts: 4, active: true },
+  { label: "Sem 4", height: 50, posts: 4 },
 ];
 
-const activeDays = 14; // jours livrés sur 30
+// Jours de livraison : J3 (1 post), J5 (3), J8 (4), J11 (4), J14 (4)
+const deliveryDays = [3, 5, 8, 11, 14];
+const deliveryCounts: Record<number, number> = { 3: 1, 5: 3, 8: 4, 11: 4, 14: 4 };
 
 const ProofSection = () => {
   return (
@@ -16,22 +17,22 @@ const ProofSection = () => {
           {/* Texte gauche */}
           <div className="observe-section">
             <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-6 leading-tight">
-              <span className="text-gold">400 000 impressions</span> en 14 jours pour un coach diplômé.{" "}
+              <span className="text-gold">400 000 impressions</span> en 14 jours pour une coach diplômée.{" "}
               <span className="text-gold">184 000 impressions</span> en 1 mois pour un menuisier artisan.
             </h2>
             <div className="space-y-4 text-white/70 leading-relaxed">
               <p>
-                Un menuisier. Artisanat français, bois récupéré. Il publiait une fois par semaine. Profil confus. Niche invisible.
+                Le premier client de LWAI fut un menuisier. Il voulait mettre en valeur l'artisanat français et parlait de bois récupéré. Il publiait une fois par semaine, avait un profil confus et une niche presque invisible.
               </p>
               <p>
-                En 1 mois avec le Système LWAI : 184 000 impressions, des prospects qui le contactaient directement.
+                En 1 mois avec le Système LWAI : 184 000 impressions et une vraie reconnaissance auprès des leaders de son secteur, avec un de ses posts liké par un haut responsable de sa ville en matière d'écologie.
               </p>
               <p>
-                Un coach récemment diplômé : 400 000 impressions en 14 jours et des prises de contact avec des leaders de son secteur.
+                La seconde fut une coach récemment diplômée : 400 000 impressions en 14 jours, plusieurs posts à plus de 1 000 likes et des centaines de personnes de sa cible qu'elle pouvait contacter pour engager la conversation.
               </p>
               <blockquote className="border-l-2 border-gold pl-4 mt-2">
                 <p className="text-gold font-display font-semibold text-lg">
-                  "Un menuisier. Un coach. La méthode est identique pour les deux."
+                  "Le menuisier et la coach. La méthode est identique pour les deux."
                 </p>
               </blockquote>
             </div>
@@ -60,7 +61,7 @@ const ProofSection = () => {
             <div className="bg-white/8 backdrop-blur-sm border border-white/15 rounded-2xl p-6 hover:border-gold/20 transition-colors">
               <div className="mb-5">
                 <h3 className="text-white font-display font-semibold text-base">Ta progression</h3>
-                <p className="text-white/50 text-xs mt-0.5">16 posts livrés sur 30 jours</p>
+                <p className="text-white/50 text-xs mt-0.5">4 posts par semaine · 16 au total</p>
               </div>
               <div className="flex items-end justify-between gap-3 h-36">
                 {progressBars.map((bar, i) => (
@@ -85,8 +86,8 @@ const ProofSection = () => {
                 ))}
               </div>
               <div className="flex items-center justify-between mt-4 pt-3 border-t border-white/5">
-                <span className="text-white/30 text-[11px]">Posts publiés</span>
-                <span className="text-white/30 text-[11px]">Moyenne : 1 post/jour</span>
+                <span className="text-white/30 text-[11px]">Posts livrés</span>
+                <span className="text-white/30 text-[11px]">4 posts / semaine</span>
               </div>
             </div>
 
@@ -94,34 +95,31 @@ const ProofSection = () => {
             <div className="bg-white/8 backdrop-blur-sm border border-white/15 rounded-2xl p-6 hover:border-gold/20 transition-colors">
               <div className="mb-5">
                 <h3 className="text-white font-display font-semibold text-base">Calendrier de livraison</h3>
-                <p className="text-white/50 text-xs mt-0.5">Tout livré en moins de 30 jours</p>
+                <p className="text-white/50 text-xs mt-0.5">16 posts livrés en 14 jours</p>
               </div>
-              <div className="grid grid-cols-5 gap-3 justify-items-center">
-                {Array.from({ length: 20 }, (_, i) => {
-                  const done = i < activeDays;
-                  return (
-                    <div
-                      key={i}
-                      className={`w-7 h-7 rounded-full flex items-center justify-center text-[10px] font-bold transition-all ${
-                        done
-                          ? "bg-gold text-navy-deep shadow-[0_0_8px_hsla(48,97%,53%,0.25)]"
-                          : "bg-white/10 text-white/30"
-                      }`}
-                    >
-                      {i + 1}
+              <div className="space-y-2.5">
+                {deliveryDays.map((day) => (
+                  <div key={day} className="flex items-center gap-3">
+                    <div className="w-12 shrink-0 text-white/50 text-[11px] font-medium">Jour {day}</div>
+                    <div className="flex gap-1.5">
+                      {Array.from({ length: deliveryCounts[day] }, (_, i) => (
+                        <div
+                          key={i}
+                          className="w-6 h-6 rounded-md bg-gold text-navy-deep flex items-center justify-center text-[10px] font-bold shadow-[0_0_8px_hsla(48,97%,53%,0.25)]"
+                        >
+                          {i + 1}
+                        </div>
+                      ))}
                     </div>
-                  );
-                })}
+                    <span className="text-white/40 text-[11px] ml-auto">
+                      +{deliveryCounts[day]} post{deliveryCounts[day] > 1 ? "s" : ""}
+                    </span>
+                  </div>
+                ))}
               </div>
-              <div className="flex items-center gap-5 mt-4 pt-3 border-t border-white/5">
-                <div className="flex items-center gap-1.5">
-                  <div className="w-2.5 h-2.5 rounded-full bg-gold" />
-                  <span className="text-white/40 text-[11px]">Fait</span>
-                </div>
-                <div className="flex items-center gap-1.5">
-                  <div className="w-2.5 h-2.5 rounded-full bg-white/10" />
-                  <span className="text-white/40 text-[11px]">À venir</span>
-                </div>
+              <div className="flex items-center justify-between mt-4 pt-3 border-t border-white/5">
+                <span className="text-white/30 text-[11px]">Total</span>
+                <span className="text-gold text-[11px] font-bold">16 posts livrés</span>
               </div>
             </div>
           </div>

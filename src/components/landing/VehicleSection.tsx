@@ -9,13 +9,13 @@ const methods = [
     name: "Positionnement™",
     tagline: "Définir exactement qui tu es et à qui tu parles",
     description:
-      "Tu remplis un questionnaire. Je définis ta niche, j'analyse ton profil existant, je pose les fondations.",
+      "Tu remplis un questionnaire interactif. Je définis ta niche, j'analyse ton profil existant et je pose les fondations.",
     icon: Target,
     image: mockupPositionnement,
     imageAlt: "Mockup livrable Positionnement",
     highlights: [
       "Niche définie",
-      "Voix identifiée",
+      "Histoire de fondation identifiée",
       "Cible précisée",
       "Angle de contenu posé",
     ],
@@ -25,7 +25,7 @@ const methods = [
     name: "Profil™",
     tagline: "Un profil LinkedIn qui parle pour toi",
     description:
-      "Tu reçois 3 versions de texte pour chaque section de ton profil. Tu choisis la meilleure. Je déploie.",
+      "Tu reçois 3 versions de texte pour chaque section de ton profil. Tu choisis la meilleure. Et tu déploies.",
     icon: User,
     image: mockupProfil,
     imageAlt: "Mockup livrable Profil LinkedIn",
@@ -33,7 +33,7 @@ const methods = [
       "Titre optimisé",
       "Résumé réécrit",
       "3 versions au choix",
-      "Profil convertisseur",
+      "Profil transformé en landing page",
     ],
   },
   {
@@ -47,7 +47,7 @@ const methods = [
     imageAlt: "Mockup livrable Contenu et Posts",
     highlights: [
       "16 posts rédigés",
-      "Visuels créés",
+      "Visuels et carrousels créés",
       "Prêts à publier",
       "Calendrier inclus",
     ],
