@@ -1,3 +1,5 @@
+import statsLinkedin from "@/assets/stats-linkedin.jpg";
+
 const progressBars = [
   { label: "Sem 1", height: 50, posts: 4 },
   { label: "Sem 2", height: 50, posts: 4 },
@@ -57,6 +59,25 @@ const ProofSection = () => {
 
           {/* Widgets droite */}
           <div className="observe-section space-y-5">
+            {/* Preuve : capture statistiques LinkedIn */}
+            <div className="relative bg-white/8 backdrop-blur-sm border border-gold/30 rounded-2xl p-5 hover:border-gold/50 transition-colors shadow-lg shadow-gold/5">
+              <div className="absolute -top-3 left-5 bg-gold text-navy-deep text-[10px] font-display font-bold tracking-wider uppercase px-3 py-1 rounded-full shadow-md">
+                Preuve réelle
+              </div>
+              <div className="mb-4 mt-1">
+                <h3 className="text-white font-display font-semibold text-base">Statistiques LinkedIn</h3>
+                <p className="text-white/50 text-xs mt-0.5">+9 066% d'impressions sur 7 jours</p>
+              </div>
+              <div className="rounded-xl overflow-hidden border border-white/10 bg-white">
+                <img
+                  src={statsLinkedin}
+                  alt="Statistiques LinkedIn : 443 726 impressions de posts, +9066% sur 7 jours, 637 abonnés, 564 vues du profil"
+                  className="w-full h-auto block"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
             {/* Widget 1 : Barres de progression */}
             <div className="bg-white/8 backdrop-blur-sm border border-white/15 rounded-2xl p-6 hover:border-gold/20 transition-colors">
               <div className="mb-5">
