@@ -162,7 +162,7 @@ const HeroSection = () => {
             <rect x="52" y="2" width="22" height="18" rx="3" fill="hsl(var(--gold))" />
             <text x="55" y="17" className="font-bold" style={{ fontSize: "18px", fill: "hsl(var(--navy-deep))", fontFamily: "system-ui, sans-serif" }}>in</text>
           </svg>
-          <span className="text-white/80 text-sm font-medium">LinkedIn Done-For-You · 30 jours</span>
+          <span className="text-white/80 text-sm font-medium">Done-For-You · 30 jours</span>
         </div>
 
         {/* Title */}

@@ -7,6 +7,7 @@ const disqualifiers = [
   "Tu refuses de valider les livrables et de publier",
   "Tu veux une formation avec des modules vidéo",
   "Tu attends des résultats sans fournir d'efforts",
+  "Tu recherches des posts bâclés sans travail de fond",
 ];
 
 const DisqualificationSection = () => {
