@@ -37,7 +37,7 @@ const TimelineSection = () => {
         </div>
         <div className="observe-section mt-12 text-center">
           <a
-            href="https://wa.me/message/FE33Z6D3JW7OI1?text=Bonjour%20Toussaint%2C%20je%20souhaite%20r%C3%A9server%20ma%20place%20pour%20le%20Sprint%20Visibilit%C3%A9."
+            href="https://wa.me/50956173528?text=Bonjour%20Toussaint%2C%20je%20souhaite%20r%C3%A9server%20ma%20place%20pour%20le%20Sprint%20Visibilit%C3%A9."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-navy text-gold hover:bg-navy-mid font-display font-bold text-sm sm:text-base px-8 py-3 rounded-full shadow-lg shadow-navy/20 transition-all hover:shadow-xl hover:scale-105"
