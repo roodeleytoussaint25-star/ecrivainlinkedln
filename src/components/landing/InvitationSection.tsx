@@ -113,7 +113,7 @@ const InvitationSection = () => {
              Le vrai problème : tu n'as pas de système. Pas de positionnement clair. Pas de contenu prêt. <em>Sprint Visibilité</em> règle les 3 en 30 jours.
           </p>
           <a
-            href="https://heyqo.cash/payment-link/share/XbJlDQ8NrKr8tf5UDS9HWkFoTaaikZadvMy2eMdhEhAp9kBjS2syxpldJqSw"
+            href="https://wa.me/message/FE33Z6D3JW7OI1"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-gold text-navy-deep hover:bg-gold-hover font-display font-bold text-sm sm:text-base px-8 py-3 rounded-full shadow-lg shadow-gold/20 transition-all hover:shadow-xl hover:shadow-gold/30 hover:scale-105"
