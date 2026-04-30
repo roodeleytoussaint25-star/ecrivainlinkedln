@@ -1,5 +1,6 @@
 import { Check, ArrowRight, AlertTriangle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import AnimatedCounter from "@/components/AnimatedCounter";
 
 const included = [
   "Positionnement défini",
@@ -19,10 +20,12 @@ const InvestmentSection = () => {
           <p className="text-white/65">Un système clé-en-main, livré en 30 jours, sans appel.</p>
         </div>
 
-        <div className="observe-section bg-white/8 backdrop-blur-sm border border-gold/20 rounded-3xl p-8 sm:p-12 max-w-2xl mx-auto mb-8">
+        <div className="observe-section card-glow bg-white/8 backdrop-blur-md border border-gold/20 rounded-3xl p-8 sm:p-12 max-w-2xl mx-auto mb-8">
           <div className="text-center mb-8">
             <div className="flex items-baseline justify-center gap-1">
-              <span className="font-display text-6xl sm:text-7xl font-bold text-gold">197</span>
+              <span className="font-display text-6xl sm:text-7xl font-bold text-gold">
+                <AnimatedCounter value={197} duration={1400} />
+              </span>
               <span className="font-display text-2xl font-bold text-gold">€</span>
             </div>
             <p className="text-white/50 text-sm mt-2">Paiement unique · Accès complet 30 jours</p>
