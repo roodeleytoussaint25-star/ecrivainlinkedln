@@ -17,7 +17,7 @@ const AboutSection = () => {
             </div>
           </div>
           <div className="text-center md:text-left">
-            <span className="text-gold font-display text-sm font-semibold tracking-wider uppercase mb-3 block">Qui suis-je ?</span>
+            <span className="text-gold font-display text-sm font-semibold uppercase tracking-[0.22em] mb-3 block">Qui suis-je ?</span>
             <h2 className="font-display text-2xl sm:text-3xl font-bold text-white mb-4">Toussaint Roodeley</h2>
             <div className="space-y-3 text-white/65 text-sm leading-relaxed">
               <p>J'ai accompagné un menuisier artisan à 184 000 impressions en 1 mois. Un coach récemment diplômé à 400 000 impressions en 14 jours. Les deux partaient de zéro.</p>

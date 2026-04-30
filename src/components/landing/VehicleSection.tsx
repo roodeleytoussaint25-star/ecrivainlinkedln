@@ -131,7 +131,7 @@ const VehicleSection = () => {
         <div className="observe-section max-w-3xl mx-auto bg-gold/5 border border-gold/20 rounded-2xl p-6 sm:p-8 text-center">
           <div className="inline-flex items-center gap-2 mb-3">
             <Zap className="w-5 h-5 text-gold" />
-            <span className="text-gold font-display font-semibold text-sm uppercase tracking-wider">Livraison express</span>
+            <span className="text-gold font-display font-semibold text-sm uppercase tracking-[0.22em]">Livraison express</span>
           </div>
           <p className="font-display text-lg sm:text-xl font-semibold text-white mb-6">
             Livraison en moins d'une semaine. Tout en async, sans appel.

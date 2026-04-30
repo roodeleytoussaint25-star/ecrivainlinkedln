@@ -12,7 +12,7 @@ const LogisticsSection = () => {
     <section className="bg-grey-light paper-texture-light py-24 sm:py-32">
       <div className="container mx-auto px-4 sm:px-6 max-w-5xl">
         <div className="text-center mb-14 observe-section">
-          <span className="text-navy font-display text-sm font-semibold tracking-wider uppercase mb-4 block">Logistique & Accès</span>
+          <span className="text-navy font-display text-sm font-semibold uppercase tracking-[0.22em] mb-4 block">Logistique & Accès</span>
           <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-navy">
             Comment ça <span className="text-gold-hover">fonctionne</span>
           </h2>

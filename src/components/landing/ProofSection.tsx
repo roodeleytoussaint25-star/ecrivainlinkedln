@@ -68,7 +68,7 @@ const ProofSection = () => {
           <div className="observe-section space-y-5">
             {/* Preuve : capture statistiques LinkedIn */}
             <div className="relative bg-white/8 backdrop-blur-sm border border-gold/30 rounded-2xl p-5 hover:border-gold/50 transition-colors shadow-lg shadow-gold/5">
-              <div className="absolute -top-3 left-5 bg-gold text-navy-deep text-[10px] font-display font-bold tracking-wider uppercase px-3 py-1 rounded-full shadow-md">
+              <div className="absolute -top-3 left-5 bg-gold text-navy-deep text-[10px] font-display font-bold uppercase tracking-[0.22em] px-3 py-1 rounded-full shadow-md">
                 Preuve réelle
               </div>
               <div className="mb-4 mt-1">

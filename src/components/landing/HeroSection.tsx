@@ -212,7 +212,7 @@ const HeroSection = () => {
         </div>
 
         {/* Author */}
-        <p className="text-white/50 text-sm font-display tracking-wider uppercase animate-fade-in-delay-3">
+        <p className="text-white/50 text-sm font-display uppercase tracking-[0.22em] animate-fade-in-delay-3">
           par Toussaint Roodeley
         </p>
       </div>
