@@ -1,5 +1,6 @@
 import { Check, ArrowRight, AlertTriangle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import AnimatedCounter from "@/components/AnimatedCounter";
 
 const included = [
   "Positionnement défini",
@@ -19,10 +20,12 @@ const InvestmentSection = () => {
           <p className="text-white/65">Un système clé-en-main, livré en 30 jours, sans appel.</p>
         </div>
 
-        <div className="observe-section bg-white/8 backdrop-blur-sm border border-gold/20 rounded-3xl p-8 sm:p-12 max-w-2xl mx-auto mb-8">
+        <div className="observe-section card-glow bg-white/8 backdrop-blur-md border border-gold/20 rounded-3xl p-8 sm:p-12 max-w-2xl mx-auto mb-8">
           <div className="text-center mb-8">
             <div className="flex items-baseline justify-center gap-1">
-              <span className="font-display text-6xl sm:text-7xl font-bold text-gold">197</span>
+              <span className="font-display text-6xl sm:text-7xl font-bold text-gold">
+                <AnimatedCounter value={197} duration={1400} />
+              </span>
               <span className="font-display text-2xl font-bold text-gold">€</span>
             </div>
             <p className="text-white/50 text-sm mt-2">Paiement unique · Accès complet 30 jours</p>
@@ -42,7 +45,7 @@ const InvestmentSection = () => {
             </div>
           </div>
 
-          <Button asChild size="lg" className="w-full bg-gold text-navy-deep hover:bg-gold-hover font-display font-bold text-base py-6 rounded-full shadow-lg shadow-gold/20 transition-all hover:shadow-xl hover:shadow-gold/30 hover:scale-[1.02]">
+          <Button asChild size="lg" className="w-full btn-shimmer bg-gold text-navy-deep hover:bg-gold-hover font-display font-bold text-base py-6 rounded-full shadow-lg shadow-gold/20 transition-all hover:shadow-xl hover:shadow-gold/30 hover:scale-[1.02]">
             <a href="https://wa.me/50956173528?text=Bonjour%20Toussaint%2C%20je%20souhaite%20r%C3%A9server%20ma%20place%20pour%20le%20Sprint%20Visibilit%C3%A9." target="_blank" rel="noopener noreferrer">
               Obtenir ma place
               <ArrowRight className="w-5 h-5 ml-1" />

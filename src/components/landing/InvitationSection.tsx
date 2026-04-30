@@ -89,7 +89,7 @@ const InvitationSection = () => {
                 <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-[hsl(var(--gold)/0.08)] to-transparent pointer-events-none" />
 
                 <div className="relative z-10">
-                  <div className="w-12 h-12 rounded-xl bg-white/10 backdrop-blur-sm border border-white/10 flex items-center justify-center mb-5 text-gold">
+                  <div className="w-12 h-12 rounded-xl bg-white/10 backdrop-blur-sm border border-white/10 flex items-center justify-center mb-5 text-gold icon-bounce">
                     <card.icon />
                   </div>
                   <h3 className="font-display text-lg font-semibold text-white mb-2">
@@ -116,7 +116,7 @@ const InvitationSection = () => {
             href="https://wa.me/50956173528?text=Bonjour%20Toussaint%2C%20je%20souhaite%20r%C3%A9server%20ma%20place%20pour%20le%20Sprint%20Visibilit%C3%A9."
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-gold text-navy-deep hover:bg-gold-hover font-display font-bold text-sm sm:text-base px-8 py-3 rounded-full shadow-lg shadow-gold/20 transition-all hover:shadow-xl hover:shadow-gold/30 hover:scale-105"
+            className="inline-flex items-center gap-2 btn-shimmer bg-gold text-navy-deep hover:bg-gold-hover font-display font-bold text-sm sm:text-base px-8 py-3 rounded-full shadow-lg shadow-gold/20 transition-all hover:shadow-xl hover:shadow-gold/30 hover:scale-105"
           >
             Réserver ma place
           </a>

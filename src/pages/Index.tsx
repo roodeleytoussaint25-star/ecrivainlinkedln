@@ -10,6 +10,7 @@ import InvestmentSection from "@/components/landing/InvestmentSection";
 import FAQSection from "@/components/landing/FAQSection";
 import AboutSection from "@/components/landing/AboutSection";
 import CTASection from "@/components/landing/CTASection";
+import ScrollProgress from "@/components/ScrollProgress";
 
 const Index = () => {
   const sectionsRef = useRef<HTMLDivElement>(null);
@@ -35,6 +36,7 @@ const Index = () => {
 
   return (
     <div ref={sectionsRef} className="overflow-x-hidden">
+      <ScrollProgress />
       <HeroSection />
       <InvitationSection />
       <ProofSection />
