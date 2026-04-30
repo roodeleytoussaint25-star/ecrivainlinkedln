@@ -6,7 +6,7 @@ const CTASection = () => {
     <>
       <section className="bg-navy paper-texture-dark py-24 sm:py-32">
         <div className="container mx-auto px-4 sm:px-6 max-w-3xl text-center">
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-6 leading-tight">
+          <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6 leading-tight">
             30 jours pour <span className="text-gold">sortir du flou.</span>
           </h2>
           <p className="text-white/65 mb-10 max-w-lg mx-auto">3 places disponibles. 197€. Paiement unique.</p>

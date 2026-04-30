@@ -15,7 +15,7 @@ const InvestmentSection = () => {
       <div className="container mx-auto px-4 sm:px-6 max-w-4xl">
         <div className="text-center mb-12 observe-section">
           <span className="text-gold font-display text-sm font-semibold tracking-wider uppercase mb-4 block">L'Investissement</span>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-2">Tout ce dont tu as besoin pour exister sur LinkedIn</h2>
+          <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-2">Tout ce dont tu as besoin pour exister sur LinkedIn</h2>
           <p className="text-white/65">Un système clé-en-main, livré en 30 jours, sans appel.</p>
         </div>
 

@@ -19,7 +19,7 @@ const ProofSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Texte gauche */}
           <div className="observe-section">
-            <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-6 leading-tight">
+            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6 leading-tight">
               <span className="text-gold">
                 <AnimatedCounter value={400000} /> impressions
               </span>{" "}

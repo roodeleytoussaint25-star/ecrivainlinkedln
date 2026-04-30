@@ -63,7 +63,7 @@ const VehicleSection = () => {
             <Linkedin className="w-4 h-4 text-gold" />
             <span className="text-white/70 text-sm font-medium">Le Programme</span>
           </div>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-4">
+          <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-4">
             3 livrables. 1 système. <span className="text-gold">30 jours.</span>
           </h2>
           <p className="text-white/60 text-base sm:text-lg leading-relaxed">

@@ -14,7 +14,7 @@ const TimelineSection = () => {
       <div className="container mx-auto px-4 sm:px-6 max-w-4xl">
         <div className="text-center mb-14 observe-section">
           <span className="text-navy font-display text-sm font-semibold tracking-wider uppercase mb-4 block">Le déroulé</span>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-navy">
+          <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-navy">
             Ton programme sur <span className="text-gold-hover">30 jours</span>
           </h2>
         </div>

@@ -14,7 +14,7 @@ const FAQSection = () => {
     <section className="bg-grey-light paper-texture-light py-24 sm:py-32">
       <div className="container mx-auto px-4 sm:px-6 max-w-3xl">
         <div className="text-center mb-12 observe-section">
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-navy-deep mb-2">Questions fréquentes</h2>
+          <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-navy-deep mb-2">Questions fréquentes</h2>
           <p className="text-navy/60 text-sm">Tout ce que tu dois savoir avant de réserver ta place</p>
         </div>
         <Accordion type="single" collapsible className="space-y-3 observe-section">
