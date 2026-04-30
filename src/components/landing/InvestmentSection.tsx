@@ -11,7 +11,7 @@ const included = [
 
 const InvestmentSection = () => {
   return (
-    <section id="investissement" className="bg-navy-deep paper-texture-dark py-20 sm:py-28">
+    <section id="investissement" className="bg-navy-deep paper-texture-dark py-24 sm:py-32">
       <div className="container mx-auto px-4 sm:px-6 max-w-4xl">
         <div className="text-center mb-12 observe-section">
           <span className="text-gold font-display text-sm font-semibold tracking-wider uppercase mb-4 block">L'Investissement</span>

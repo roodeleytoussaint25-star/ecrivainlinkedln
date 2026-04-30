@@ -56,7 +56,7 @@ const methods = [
 
 const VehicleSection = () => {
   return (
-    <section id="vehicule" className="bg-navy paper-texture-dark py-20 sm:py-28">
+    <section id="vehicule" className="bg-navy paper-texture-dark py-24 sm:py-32">
       <div className="container mx-auto px-4 sm:px-6 max-w-5xl">
         <div className="text-center mb-16 observe-section max-w-2xl mx-auto">
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2 mb-6">

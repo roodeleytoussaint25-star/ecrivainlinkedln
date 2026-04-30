@@ -3,7 +3,7 @@ import profileToussaint from "@/assets/profile-toussaint.png";
 
 const AboutSection = () => {
   return (
-    <section className="bg-navy-mid paper-texture-dark py-20 sm:py-28">
+    <section className="bg-navy-mid paper-texture-dark py-24 sm:py-32">
       <div className="container mx-auto px-4 sm:px-6 max-w-4xl">
         <div className="observe-section flex flex-col md:flex-row items-center gap-10 md:gap-14">
           <div className="shrink-0">

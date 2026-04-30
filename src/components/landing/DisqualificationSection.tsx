@@ -12,7 +12,7 @@ const disqualifiers = [
 
 const DisqualificationSection = () => {
   return (
-    <section className="bg-navy-mid paper-texture-dark py-20 sm:py-28">
+    <section className="bg-navy-mid paper-texture-dark py-24 sm:py-32">
       <div className="container mx-auto px-4 sm:px-6 max-w-3xl">
         <div className="text-center mb-12 observe-section">
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-white">
