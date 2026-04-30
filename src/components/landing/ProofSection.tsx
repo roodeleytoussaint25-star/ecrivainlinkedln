@@ -1,4 +1,5 @@
 import statsLinkedin from "@/assets/stats-linkedin.jpg";
+import AnimatedCounter from "@/components/AnimatedCounter";
 
 const progressBars = [
   { label: "Sem 1", height: 50, posts: 4 },
@@ -19,8 +20,14 @@ const ProofSection = () => {
           {/* Texte gauche */}
           <div className="observe-section">
             <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-6 leading-tight">
-              <span className="text-gold">400 000 impressions</span> en 14 jours pour une coach diplômée.{" "}
-              <span className="text-gold">184 000 impressions</span> en 1 mois pour un menuisier artisan.
+              <span className="text-gold">
+                <AnimatedCounter value={400000} /> impressions
+              </span>{" "}
+              en 14 jours pour une coach diplômée.{" "}
+              <span className="text-gold">
+                <AnimatedCounter value={184000} /> impressions
+              </span>{" "}
+              en 1 mois pour un menuisier artisan.
             </h2>
             <div className="space-y-4 text-white/70 leading-relaxed">
               <p>
