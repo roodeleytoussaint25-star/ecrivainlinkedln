@@ -52,7 +52,7 @@ const cards = [
 const InvitationSection = () => {
   return (
     <section className="relative bg-navy paper-texture-dark py-20 sm:py-28 overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,hsl(224_76%_40%/0.3),transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,hsl(var(--navy)/0.4),transparent_60%)]" />
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 max-w-5xl">
         <h2 className="font-display text-3xl sm:text-4xl font-bold text-white text-center mb-14 observe-section">
@@ -71,22 +71,22 @@ const InvitationSection = () => {
               }`}
               style={{
                 background:
-                  "linear-gradient(160deg, hsla(270, 60%, 50%, 0.4), hsla(224, 76%, 33%, 0.3), hsla(270, 80%, 30%, 0.5))",
+                  "linear-gradient(160deg, hsl(var(--gold) / 0.35), hsl(var(--navy) / 0.4), hsl(var(--gold) / 0.25))",
               }}
             >
               {/* Glow effect on hover */}
-              <div className="absolute -inset-1 rounded-3xl bg-[radial-gradient(circle_at_50%_100%,hsla(270,60%,50%,0.3),transparent_70%)] opacity-0 group-hover:opacity-100 transition-opacity blur-xl" />
+              <div className="absolute -inset-1 rounded-3xl bg-[radial-gradient(circle_at_50%_100%,hsl(var(--gold)/0.25),transparent_70%)] opacity-0 group-hover:opacity-100 transition-opacity blur-xl" />
 
               {/* Card inner */}
               <div
                 className="relative rounded-3xl p-7 sm:p-8 backdrop-blur-xl overflow-hidden"
                 style={{
                   background:
-                    "linear-gradient(170deg, hsla(224, 76%, 20%, 0.95) 0%, hsla(260, 40%, 15%, 0.95) 60%, hsla(270, 50%, 20%, 0.9) 100%)",
+                    "linear-gradient(170deg, hsl(var(--navy-deep) / 0.95) 0%, hsl(var(--navy-mid) / 0.95) 60%, hsl(var(--navy) / 0.9) 100%)",
                 }}
               >
                 {/* Subtle gradient glow at bottom */}
-                <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-[hsla(270,60%,40%,0.15)] to-transparent pointer-events-none" />
+                <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-[hsl(var(--gold)/0.08)] to-transparent pointer-events-none" />
 
                 <div className="relative z-10">
                   <div className="w-12 h-12 rounded-xl bg-white/10 backdrop-blur-sm border border-white/10 flex items-center justify-center mb-5 text-gold">
