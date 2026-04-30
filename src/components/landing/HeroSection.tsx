@@ -166,7 +166,7 @@ const HeroSection = () => {
         </div>
 
         {/* Title */}
-        <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.1] animate-fade-in-delay-1">
+        <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.05] animate-fade-in-delay-1">
           Ton profil optimisé et{" "}
           <span className="text-gold">16 posts</span>{" "}
           prêts à publier en{" "}
