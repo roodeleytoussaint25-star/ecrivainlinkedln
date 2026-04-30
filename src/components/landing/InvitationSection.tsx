@@ -51,11 +51,11 @@ const cards = [
 
 const InvitationSection = () => {
   return (
-    <section className="relative bg-navy paper-texture-dark py-20 sm:py-28 overflow-hidden">
+    <section className="relative bg-navy paper-texture-dark py-24 sm:py-32 overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,hsl(var(--navy)/0.4),transparent_60%)]" />
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 max-w-5xl">
-        <h2 className="font-display text-3xl sm:text-4xl font-bold text-white text-center mb-14 observe-section">
+        <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white text-center mb-14 observe-section">
           Pourquoi ton LinkedIn ne génère{" "}
           <span className="text-gold">aucune traction</span>
         </h2>

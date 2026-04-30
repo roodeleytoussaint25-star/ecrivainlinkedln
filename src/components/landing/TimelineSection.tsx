@@ -10,11 +10,11 @@ const steps = [
 
 const TimelineSection = () => {
   return (
-    <section className="bg-grey-light paper-texture-light py-20 sm:py-28">
+    <section className="bg-grey-light paper-texture-light py-24 sm:py-32">
       <div className="container mx-auto px-4 sm:px-6 max-w-4xl">
         <div className="text-center mb-14 observe-section">
-          <span className="text-navy font-display text-sm font-semibold tracking-wider uppercase mb-4 block">Le déroulé</span>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-navy">
+          <span className="text-navy font-display text-sm font-semibold uppercase tracking-[0.22em] mb-4 block">Le déroulé</span>
+          <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-navy">
             Ton programme sur <span className="text-gold-hover">30 jours</span>
           </h2>
         </div>
@@ -27,7 +27,7 @@ const TimelineSection = () => {
                   <step.icon className="w-5 h-5 sm:w-6 sm:h-6 text-gold" />
                 </div>
                 <div className="bg-white rounded-2xl p-5 sm:p-6 flex-1 border border-grey shadow-sm hover:shadow-md transition-shadow">
-                  <span className="text-gold-hover font-display text-xs font-bold tracking-wider uppercase">{step.days}</span>
+                  <span className="text-gold-hover font-display text-xs font-bold uppercase tracking-[0.22em]">{step.days}</span>
                   <h3 className="font-display text-lg font-semibold text-navy mt-1">{step.title}</h3>
                   <p className="text-muted-foreground text-sm mt-1">{step.desc}</p>
                 </div>

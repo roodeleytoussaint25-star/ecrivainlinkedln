@@ -11,11 +11,11 @@ const included = [
 
 const InvestmentSection = () => {
   return (
-    <section id="investissement" className="bg-navy-deep paper-texture-dark py-20 sm:py-28">
+    <section id="investissement" className="bg-navy-deep paper-texture-dark py-24 sm:py-32">
       <div className="container mx-auto px-4 sm:px-6 max-w-4xl">
         <div className="text-center mb-12 observe-section">
-          <span className="text-gold font-display text-sm font-semibold tracking-wider uppercase mb-4 block">L'Investissement</span>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-2">Tout ce dont tu as besoin pour exister sur LinkedIn</h2>
+          <span className="text-gold font-display text-sm font-semibold uppercase tracking-[0.22em] mb-4 block">L'Investissement</span>
+          <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-2">Tout ce dont tu as besoin pour exister sur LinkedIn</h2>
           <p className="text-white/65">Un système clé-en-main, livré en 30 jours, sans appel.</p>
         </div>
 
@@ -29,7 +29,7 @@ const InvestmentSection = () => {
           </div>
 
           <div className="mb-10">
-            <p className="text-white/40 text-xs font-semibold uppercase tracking-wider mb-3">Le programme</p>
+            <p className="text-white/40 text-xs font-semibold uppercase tracking-[0.22em] mb-3">Le programme</p>
             <div className="space-y-2.5">
               {included.map((item, i) => (
                 <div key={i} className="flex items-start gap-3">

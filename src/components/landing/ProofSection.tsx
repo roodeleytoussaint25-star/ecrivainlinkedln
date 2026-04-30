@@ -14,12 +14,12 @@ const deliveryCounts: Record<number, number> = { 3: 1, 5: 3, 8: 4, 11: 4, 14: 4 
 
 const ProofSection = () => {
   return (
-    <section className="bg-navy-mid paper-texture-dark py-20 sm:py-28">
+    <section className="bg-navy-mid paper-texture-dark py-24 sm:py-32">
       <div className="container mx-auto px-4 sm:px-6 max-w-5xl">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Texte gauche */}
           <div className="observe-section">
-            <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-6 leading-tight">
+            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6 leading-tight">
               <span className="text-gold">
                 <AnimatedCounter value={400000} /> impressions
               </span>{" "}
@@ -68,7 +68,7 @@ const ProofSection = () => {
           <div className="observe-section space-y-5">
             {/* Preuve : capture statistiques LinkedIn */}
             <div className="relative bg-white/8 backdrop-blur-sm border border-gold/30 rounded-2xl p-5 hover:border-gold/50 transition-colors shadow-lg shadow-gold/5">
-              <div className="absolute -top-3 left-5 bg-gold text-navy-deep text-[10px] font-display font-bold tracking-wider uppercase px-3 py-1 rounded-full shadow-md">
+              <div className="absolute -top-3 left-5 bg-gold text-navy-deep text-[10px] font-display font-bold uppercase tracking-[0.22em] px-3 py-1 rounded-full shadow-md">
                 Preuve réelle
               </div>
               <div className="mb-4 mt-1">

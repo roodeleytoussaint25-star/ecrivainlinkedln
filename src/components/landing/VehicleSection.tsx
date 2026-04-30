@@ -56,14 +56,14 @@ const methods = [
 
 const VehicleSection = () => {
   return (
-    <section id="vehicule" className="bg-navy paper-texture-dark py-20 sm:py-28">
+    <section id="vehicule" className="bg-navy paper-texture-dark py-24 sm:py-32">
       <div className="container mx-auto px-4 sm:px-6 max-w-5xl">
         <div className="text-center mb-16 observe-section max-w-2xl mx-auto">
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2 mb-6">
             <Linkedin className="w-4 h-4 text-gold" />
             <span className="text-white/70 text-sm font-medium">Le Programme</span>
           </div>
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-4">
+          <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-4">
             3 livrables. 1 système. <span className="text-gold">30 jours.</span>
           </h2>
           <p className="text-white/60 text-base sm:text-lg leading-relaxed">
@@ -131,7 +131,7 @@ const VehicleSection = () => {
         <div className="observe-section max-w-3xl mx-auto bg-gold/5 border border-gold/20 rounded-2xl p-6 sm:p-8 text-center">
           <div className="inline-flex items-center gap-2 mb-3">
             <Zap className="w-5 h-5 text-gold" />
-            <span className="text-gold font-display font-semibold text-sm uppercase tracking-wider">Livraison express</span>
+            <span className="text-gold font-display font-semibold text-sm uppercase tracking-[0.22em]">Livraison express</span>
           </div>
           <p className="font-display text-lg sm:text-xl font-semibold text-white mb-6">
             Livraison en moins d'une semaine. Tout en async, sans appel.
